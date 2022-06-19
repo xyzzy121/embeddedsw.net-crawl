@@ -1,0 +1,283 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>OpenPuff Download - Steganography &amp; Watermarking</title>
+<meta name="description" content="OpenPuff steganography & watermarking. Steganography software, professional and safe, with a lot of data obfuscation and unique security features.">
+<meta name="keywords" content="openPuff, steganography, watermarking, cryptography, safe, open source, deniable, aes, anubis, camellia, cast256, clefia, frog, hierocrypt3, idea-nxt, mars, rc6, safer+, sc2000, serpent, speed, twofish, unicorn-a, images, video, audio, pdf, swf, flv, bmp, jpg, png, pcx, tga, mp3, mp4, wav, mpg, vob, 3gp">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link type="text/css" rel="stylesheet" href="styles\style.css">
+
+<script type="text/javascript" src="styles\jquery.js"></script>
+<script type="text/javascript" src="styles\qrcode.js"></script>
+
+<script type="text/javascript">
+
+var bitcoinID="113Fzv5e64RdzzREU7qY1sH77touyNosGT";
+var litecoinID="La3LCLfbjmTYHoVkpEPZpkrX6sF9SaEWie";
+var dashID="Xakb9ykRXKvvcNkP3UVEmhqPAyRBu86Vo9";
+
+var btcValMin  =0.00006000;
+var btcValSmall=0.00060000;
+var btcValStd  =0.00150000;
+var btcValLarge=0.00300000;
+var btcValSupp =0.00600000;
+
+var btcStrMin  ="0.00006000 BTC - Minimum payment";
+var btcStrSmall="0.00060000 BTC - Small payment";
+var btcStrStd  ="0.00150000 BTC - Standard payment";
+var btcStrLarge="0.00300000 BTC - Large payment";
+var btcStrSupp ="0.00600000 BTC - Supporter payment";
+
+var ltcValMin  =0.01700000;
+var ltcValSmall=0.17000000;
+var ltcValStd  =0.42500000;
+var ltcValLarge=0.85000000;
+var ltcValSupp =1.70000000;
+
+var ltcStrMin  ="0.01700000 LTC - Minimum payment";
+var ltcStrSmall="0.17000000 LTC - Small payment";
+var ltcStrStd  ="0.42500000 LTC - Standard payment";
+var ltcStrLarge="0.85000000 LTC - Large payment";
+var ltcStrSupp ="1.70000000 LTC - Supporter payment";
+
+var dashValMin  =0.01400000;
+var dashValSmall=0.14000000;
+var dashValStd  =0.35000000;
+var dashValLarge=0.70000000;
+var dashValSupp =1.40000000;
+
+var dashStrMin  ="0.01400000 DASH - Minimum payment";
+var dashStrSmall="0.14000000 DASH - Small payment";
+var dashStrStd  ="0.35000000 DASH - Standard payment";
+var dashStrLarge="0.70000000 DASH - Large payment";
+var dashStrSupp ="1.40000000 DASH - Supporter payment";
+
+function getSelectedOption(sel) {
+ var opt;
+ for ( var i = 0, len = sel.options.length; i < len; i++ ) {
+  opt = sel.options[i];
+  if ( opt.selected === true ) { break; }
+  }
+ return opt;
+}
+
+</script>
+
+<script type="text/javascript" src="bitcoin.php.html"></script>
+<script type="text/javascript" src="litecoin.php.html"></script>
+<script type="text/javascript" src="dash.php.html"></script>
+
+<script type="text/javascript" src="bitcoin_value.php.html"></script>
+<script type="text/javascript" src="litecoin_value.php.html"></script>
+<script type="text/javascript" src="dash_value.php.html"></script>
+
+</head>
+
+<body>
+
+<!-- * main BEGIN -->
+<div id="main">
+
+<!-- **** contact BEGIN -->
+<div id="contact">
+
+<script type="text/javascript" src="styles\contact.js"></script>
+
+</div>
+<!-- **** contact END -->
+
+<!-- ** general BEGIN -->
+<div id="general">
+
+<h2 align="justify" style="color:#3A87AD;background:#D9EDF7;padding:5px 5px 5px 5px;">The whole <span style="font-variant:small-caps;">Multi Obfuscation Project</span>,
+starting from 2017, will undergo major security development and updates. <b>Purchasing is requested</b> when you download any of the related products, to cover the project costs.
+<b>Payment is 100% anonymous</b>, just choose one of the following cryptocurrencies.</h2>
+
+<br>
+
+<div align="center">
+<table border="1" style="background:#FFFFFF;"><tr>
+<td><div style="margin:5px 5px 5px 5px;">
+<h2 align="center"><b>OpenPuff for Windows/Linux</b></h2>
+<h2 align="center">Download direct link <img src="images\zip.jpg" alt="zip.jpg"> <b>v4.01 <a href="zip\OpenPuff_release.zip">(.ZIP)</a></b></h2>
+<br>
+<h3><i>If you don't have access to any cryptocurrency, or you are in urgent need to protect your<br>
+privacy, then please just download the software. Your right to privacy comes always first.</i></h3>
+</div></td>
+</tr></table>
+</div>
+
+<br>
+
+<table border="1" width="100%" style="background:#FFFFFF;">
+
+<tr><td><table><tr>
+
+<td><div id="btc_showqrcode" style="width:150px; height:150px; margin: 20px 20px 20px 20px;"></div></td>
+<td>&nbsp;</td>
+<td valign="middle"><div align="justify">
+
+<h2>Select your payment amount:</h2>
+
+<select id="btc_amount" name="btc_amount" style="font-size:15px; font-weight:normal;">
+<option value=""></option>
+<option value="" selected="selected"></option>
+<option value=""></option>
+<option value=""></option>
+<option value=""></option>
+</select>
+
+<br>
+<br>
+
+<h3><i>Scan QR code or use following address</i></h3>
+
+<br>
+
+<h2>Send <a href="https://bitcoin.org">Bitcoin</a> to <a href="" id="btc_mylink"></a></h2>
+
+</div></td>
+
+</tr></table></td></tr>
+
+<tr><td><table><tr>
+
+<td><div id="ltc_showqrcode" style="width:150px; height:150px; margin: 20px 20px 20px 20px;"></div></td>
+<td>&nbsp;</td>
+<td valign="middle"><div align="justify">
+
+<h2>Select your payment amount:</h2>
+
+<select id="ltc_amount" name="ltc_amount" style="font-size:15px; font-weight:normal;">
+<option value=""></option>
+<option value="" selected="selected"></option>
+<option value=""></option>
+<option value=""></option>
+<option value=""></option>
+</select>
+
+<br>
+<br>
+
+<h3><i>Scan QR code or use following address</i></h3>
+
+<br>
+
+<h2>Send <a href="https://litecoin.org">Litecoin</a> to <a href="" id="ltc_mylink"></a></h2>
+
+</div></td>
+
+</tr></table></td></tr>
+
+<tr><td><table><tr>
+
+<td><div id="dash_showqrcode" style="width:150px; height:150px; margin: 20px 20px 20px 20px;"></div></td>
+<td>&nbsp;</td>
+<td valign="middle"><div align="justify">
+
+<h2>Select your payment amount:</h2>
+
+<select id="dash_amount" name="dash_amount" style="font-size:15px; font-weight:normal;">
+<option value=""></option>
+<option value="" selected="selected"></option>
+<option value=""></option>
+<option value=""></option>
+<option value=""></option>
+</select>
+
+<br>
+<br>
+
+<h3><i>Scan QR code or use following address</i></h3>
+
+<br>
+
+<h2>Send <a href="https://dash.org">Dash</a> to <a href="" id="dash_mylink"></a></h2>
+
+</div></td>
+
+</tr></table></td></tr>
+
+</table>
+
+<script type="text/javascript">
+var btc_qrcode = new QRCode( document.getElementById("btc_showqrcode"), { width : 150, height : 150 } );
+var ltc_qrcode = new QRCode( document.getElementById("ltc_showqrcode"), { width : 150, height : 150 } );
+var dash_qrcode = new QRCode( document.getElementById("dash_showqrcode"), { width : 150, height : 150 } );
+
+var btcList = document.getElementById("btc_amount");
+btcList.options[0] = new Option(btcStrMin, btcValMin);
+btcList.options[1] = new Option(btcStrSmall, btcValSmall);
+btcList.options[1].selected = true;
+btcList.options[2] = new Option(btcStrStd, btcValStd);
+btcList.options[3] = new Option(btcStrLarge, btcValLarge);
+btcList.options[4] = new Option(btcStrSupp, btcValSupp);
+
+var ltcList = document.getElementById("ltc_amount");
+ltcList.options[0] = new Option(ltcStrMin, ltcValMin);
+ltcList.options[1] = new Option(ltcStrSmall, ltcValSmall);
+ltcList.options[1].selected = true;
+ltcList.options[2] = new Option(ltcStrStd, ltcValStd);
+ltcList.options[3] = new Option(ltcStrLarge, ltcValLarge);
+ltcList.options[4] = new Option(ltcStrSupp, ltcValSupp);
+
+var dashList = document.getElementById("dash_amount");
+dashList.options[0] = new Option(dashStrMin, dashValMin);
+dashList.options[1] = new Option(dashStrSmall, dashValSmall);
+dashList.options[1].selected = true;
+dashList.options[2] = new Option(dashStrStd, dashValStd);
+dashList.options[3] = new Option(dashStrLarge, dashValLarge);
+dashList.options[4] = new Option(dashStrSupp, dashValSupp);
+
+var btc_qrcodelink = "bitcoin:"+bitcoinID+"?amount="+getSelectedOption(document.getElementById("btc_amount")).value;
+document.getElementById("btc_mylink").href = btc_qrcodelink;
+document.getElementById("btc_mylink").innerHTML = bitcoinID;
+btc_qrcode.makeCode(btc_qrcodelink);
+
+var ltc_qrcodelink = "litecoin:"+litecoinID+"?amount="+getSelectedOption(document.getElementById("ltc_amount")).value;
+document.getElementById("ltc_mylink").href = ltc_qrcodelink;
+document.getElementById("ltc_mylink").innerHTML = litecoinID;
+ltc_qrcode.makeCode(ltc_qrcodelink);
+
+var dash_qrcodelink = "dash:"+dashID+"?amount="+getSelectedOption(document.getElementById("dash_amount")).value;
+document.getElementById("dash_mylink").href = dash_qrcodelink;
+document.getElementById("dash_mylink").innerHTML = dashID;
+dash_qrcode.makeCode(dash_qrcodelink);
+
+document.getElementById("btc_amount").onclick = function () {
+ btc_qrcodelink = "bitcoin:"+bitcoinID+"?amount="+getSelectedOption(document.getElementById("btc_amount")).value;
+ document.getElementById("btc_mylink").href = btc_qrcodelink;
+ btc_qrcode.makeCode(btc_qrcodelink);
+ };
+
+document.getElementById("ltc_amount").onclick = function () {
+ ltc_qrcodelink = "litecoin:"+litecoinID+"?amount="+getSelectedOption(document.getElementById("ltc_amount")).value;
+ document.getElementById("ltc_mylink").href = ltc_qrcodelink;
+ ltc_qrcode.makeCode(ltc_qrcodelink);
+ };
+
+document.getElementById("dash_amount").onclick = function () {
+ dash_qrcodelink = "dash:"+dashID+"?amount="+getSelectedOption(document.getElementById("dash_amount")).value;
+ document.getElementById("dash_mylink").href = dash_qrcodelink;
+ dash_qrcode.makeCode(dash_qrcodelink);
+ };
+</script>
+
+<br>
+
+<!-- SHINYSTAT -->
+<script type="text/javascript" src="cgi-bin\getcod.cgi?USER=puffv2"></script>
+<noscript>
+<a href="http://www.shinystat.com/it" target="_top">
+<img src="cgi-bin\shinystat.cgi?USER=puffv2" alt="Contatore sito"></a>
+</noscript>
+
+</div>
+<!-- ** general END ** -->
+
+</div>
+<!-- * main END -->
+
+</body>
+</html>

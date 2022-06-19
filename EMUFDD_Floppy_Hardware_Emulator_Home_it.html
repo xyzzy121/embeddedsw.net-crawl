@@ -1,0 +1,539 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>EMUHDD - Emulatore Hard Disk MO ZIP - EMUFDD - Emulatore Floppy Disk</title>
+<meta name="description" content="EMUHDD, emulatore Hard Disk MO ZIP, EMUFDD, emulatore floppy disk, da IDE SCSI floppy a rete TCP/IP USB CF SDC, gli emulatori HW universali pi&#249; affidabili e configurabili, applicazionu: robot, apparecchiature per semiconduttori, CNC, macchinario industriale.">
+<meta name="keywords" content="EMUHDD, hard disk, MO, ZIP, EMUFDD, floppy disk, emulatore, IDE, SCSI, TCP/IP, rete, USB, CF, SDC, configurabile, universale, HW, robot, apparecchiature per semiconduttori, CNC, macchinario industriale">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link type="text/css" rel="stylesheet" href="styles\style.css">
+<link type="text/css" rel="stylesheet" href="styles\menu.css">
+<script type="text/javascript" src="styles\jquery.js"></script>
+</head>
+
+<body>
+
+<!-- * main BEGIN -->
+<div id="main">
+
+<!-- **** contact BEGIN -->
+<div id="contact">
+
+<script type="text/javascript" src="styles\contact.js"></script>
+
+</div>
+<!-- **** contact END -->
+
+<!-- ** general BEGIN -->
+<div id="general">
+
+<!-- ** header-cont BEGIN -->
+<div id="header_cont">
+
+<div id="cssmenu">
+<script type="text/javascript" src="styles\menu.js"></script>
+</div>
+
+<div id="header-title">
+<script type="text/javascript" src="styles\submenu.js"></script>
+</div>
+
+</div>
+<!-- ** header-cont END -->
+
+<!-- *** centerbar BEGIN -->
+<div id="centerbar">
+
+<!-- *** text-margin BEGIN -->
+<div id="text_margin" align="center">
+
+<h3 align="left" style="font-variant:small-caps;"><a href="index.htm"><b>Home</b></a> > <b>Hardware</b> > <b>EMUHDD &amp; EMUFDD</b></h3>
+
+<br>
+
+<table><tr>
+
+<td><h3>
+<a href="EMUFDD_Floppy_Hardware_Emulator_Home.html"><img src="images\flag_us.png" alt="flag_us.png" border="1"></a>
+</h3></td>
+
+<td><h3>
+<a href="EMUFDD_Floppy_Hardware_Emulator_Home_es.html"><img src="images\flag_es.png" alt="flag_es.png" border="1"></a>
+</h3></td>
+
+<td><h3>
+<img style="border: 5px solid darkgrey;" src="images\flag_it.png" alt="flag_it.png" border="1">
+</h3></td>
+
+</tr></table>
+
+<br>
+
+<table>
+<tr>
+<td><h1><b>EMUHDD</b></h1></td>
+<td>&nbsp;</td>
+<td><h1 class="left">- Emulatore di Hard Disk e MO e ZIP</h1></td>
+</tr>
+<tr>
+<td><h1><b>EMUFDD</b></h1></td>
+<td>&nbsp;</td>
+<td><h1 class="left">- Emulatore di Floppy Disk</h1></td>
+</tr>
+</table>
+
+<h2><i>IDE, SCSI, Floppy</i> <b>&larr; da/a &rarr;</b> <i>Rete TCP/IP, USB, CF, SDC</i></h2>
+
+<br>
+
+<h2><b>Servizi di retrofit per l'industria, dal macchinario alla soluzione</b><br>
+Conforme con <a href="https://en.wikipedia.org/wiki/Industry_4.0">Industria 4.0</a>, <a href="https://en.wikipedia.org/wiki/Direct_numerical_control">DNC</a> e Gestione avanzata della qualit&#224; ISO <a href="https://en.wikipedia.org/wiki/ISO_9000">9001</a>/<a href="https://en.wikipedia.org/wiki/ISO/TS_16949">16949</a><br>
+<i>Gli emulatori HW universali pi&#249; affidabili e configurabili</i></h2>
+
+<br>
+
+<h2><b>
+<a href="#Contact">Come contattarci</a>
+- <a href="#Why">Perch&#233; EMUHDD e EMUFDD ?</a>
+- <a href="#Features">Caratteristiche</a>
+- <a href="#Security">Sicurezza</a><br>
+<a href="#Software">Software</a>
+- <a href="#Machinery">Guida Macchinari</a>
+- <a href="#Drives">Guida HDD e FDD</a>
+- <a href="#Jumpering">FDD Jumpering</a>
+</b></h2>
+
+<br>
+
+<script type="text/javascript" src="styles\emufdd_slideshow.js"></script>
+
+<h3><i>Esempi di macchinari con EMUHDD e EMUFDD installato</i></h3>
+
+<br>
+
+<script type="text/javascript" src="styles\emufdd_machinery.js"></script>
+
+<br>
+
+<div style="float:left;margin-right:20px;">
+<table><tr><td>
+<img src="images\EMUHDD_SCSI_front_little.jpg" alt="EMUHDD_SCSI_front_little.jpg" width="150" height="71">
+<h3><b>SCSI EMUHDD</b></h3></td></tr>
+<tr><td>
+<img src="images\EMUHDD_IDE_front_little.jpg" alt="EMUHDD_IDE_front_little.jpg" width="150" height="49">
+<h3><b>IDE EMUHDD</b></h3></td></tr></table>
+</div>
+
+<h3 align="justify">[ <a href="doc\emuhdd_SCSI_manual.pdf"><b>SCSI Manual</b></a> <a href="doc\emuhdd_IDE_manual.pdf"><b>IDE Manual</b></a> ]
+EMUHDD (<i>"Emulator of Hard Disk Drive"</i>) &#232; una tecnologia combinata che permette
+di emulare qualsiasi tipo di hard disk o magneto ottico o drive removibile. La comunicazione
+con il macchinario host supporta un ampio range di protocolli, ATA-IDE, PATA-IDE, ULTRA-SCSI,
+SCSI I, SCSI II. I dati sono salvati su una scelta di supporti, CF o SDC moderna, e sempre
+facilmente accessibile sul PC per un rapido backup/restore. Ogni EMUHDD &#232; completamente
+configurabile per riprodurre esattamente la geometria del drive originale (nome, dimensione,
+tracce, settori...). Non c'&#232; limite all'OS supportato dall'emulazione: Win/Dos/Unix e
+qualsiasi altro sistema operativo legacy. A seconda dell'applicazione verr&#224; fornita
+anche una guia alla manutenzione preventiva, ogni 1/5 anni, garantendo un tasso di errore
+unico dello 0% nel tempo.</h3>
+
+<br style="clear:left;">
+
+<div style="float:left;margin-right:20px;">
+<table><tr><td>
+<img src="images\EMUFDD_ETH_front_little.jpg" alt="EMUFDD_ETH_front_little.jpg" width="150" height="71">
+<h3><b>Network EMUFDD</b></h3></td></tr></table>
+</div>
+
+<h3 align="justify">[ <a href="doc\emufdd_ETH_hw_manual.pdf"><b>NET Manual</b></a> ]
+EMUFDD (<i>"Emulator of Floppy Disk Drive"</i>) &#232; una tecnologia specifica per emulare
+ogni tipo di floppy disk drive, 8"/5.25"/3.5". I dati sono salvati su un buffer FRAM interno
+che si comporta come un hard disk, nessuna perdita di dati allo spegnimento. Rete TCP/IP
+robusta, 80x pi&#249; veloce di una seriale RS232, e comunicazione industrial grade con un
+numero illimitato di PC distribuiti. Interlock di sicurezza di emulazione/rete e ritrasmissione
+assicurano uno scambio dati affidabile in qualsiasi condizione. &#200; incluso il supporto
+per lo scripting testuale per una perfetta integrazione DNC. In caso di "inattivit&#224; di
+rete", una porta USB addizionale e completamente funzionale &#232; ulteriormente disponibile.
+Non &#232; necessaria alcuna manutenzione preventiva grazie alla garanzia unica di 20 anni
+di conservazione dei dati.</h3>
+
+<br style="clear:left;">
+
+<div style="float:left;margin-right:20px;">
+<table><tr><td>
+<img src="images\EMUFDD_USB_front_little.jpg" alt="EMUFDD_USB_front_little.jpg" width="150" height="71">
+<h3><b>USB EMUFDD</b></h3></td></tr></table>
+</div>
+
+<h3 align="justify">[ <a href="doc\emufdd_USB_hw_manual.pdf"><b>USB Manual</b></a> ]
+Basato sulla stessa tecnologia dell'EMUFDD di rete, la versione solo-USB &#232; adatta
+agli utenti senza accesso ad una connessione di rete o che scambiano un quantitativo di
+dati giornaliero molto limitato. Lo stesso buffer FRAM interno, che si comporta come un
+hard disk, pu&#242; essere caricato/salvato usanto una chiavetta USB standard. Non bisogna
+pre-formattare la chiavetta USB con speciali partizioni nascoste, e nemmeno mantenere la
+chiavetta USB sempre inserita dopo lo scambio dati. Un display numerato 00-99 pu&#242; essere
+usato per selezionare subdirectory e immagini non-standard, entrambe pienamente supportate.</h3>
+
+<br style="clear:left;">
+
+<a name="Contact"></a>
+<h1>* * <b>Come contattarci ?</b> * *</h1>
+
+<br>
+
+<table><tr>
+
+<td>
+<img src="images\support_trasp.gif" alt="support_trasp.gif" width="72" height="80">
+<h4>&nbsp;</h4>
+<h3 class="left"><b>TELEFONO:</b> +1 949-287-8623<br>
+<b>SKYPE:</b> <b><a href="skype:embeddedsw.company?call">embeddedsw.company</a></b><br>
+<b>EMAIL:</b> <b><a href="mailto:info@embeddedsw.net">info@embeddedsw.net</a></b></h3>
+</td>
+
+<td>&nbsp;</td>
+
+<td><div class="left">
+<ol>
+<li style="margin-left:20px;"><h3>Descrivete il vostro macchinario:<br><b>tipo, modello, controllo, stato di funzionamento, drive/dischi speciali</b></h3></li>
+<li style="margin-left:20px;"><h3>Mandate i dettagli della vostra azienda e il vostro contatto telefonico:<br><b>vi richiameremo se possibile</b></h3></li>
+<li style="margin-left:20px;"><h3>EMUHDD e EMUFDD sono prodotti custom professionali:<br><b>i dettagli del macchinario sono sempre necessari</b></h3></li>
+<li style="margin-left:20px;"><h3>Potete sempre richiedere anche<br><b><a href="EMUFDD_Custom_Installation.html">retrofit e installazione a domicilio tutto incluso</a></b></h3></li>
+</ol>
+</div></td>
+
+</tr></table>
+
+<br>
+
+<a name="Why"></a>
+<h1>* * <b>Perch&#233; EMUHDD e EMUFDD ?</b> * *</h1>
+
+<br>
+
+<table border="1">
+<tr>
+<td><h2><img src="images\01_EMUFDD_IDE_ATA.jpg" alt="01_EMUFDD_IDE_ATA.jpg" width="125" height="75"></h2></td>
+<td><h2><img src="images\02_EMUHDD_IDE_PATA.jpg" alt="02_EMUHDD_IDE_PATA.jpg" width="125" height="75"></h2></td>
+<td><h2><img src="images\03_EMUHDD_SCSI_ULTRA.jpg" alt="03_EMUHDD_SCSI_ULTRA.jpg" width="125" height="75"></h2></td>
+<td><h2><img src="images\04_EMUHDD_SCSI_I_II.jpg" alt="04_EMUHDD_SCSI_I_II.jpg" width="125" height="75"></h2></td>
+</tr>
+<tr>
+<td><h2><img src="images\05_EMUHDD_MO_ZIP.jpg" alt="05_EMUHDD_MO_ZIP.jpg" width="125" height="75"></h2></td>
+<td><h2><img src="images\06_EMUFDD_3p5.jpg" alt="06_EMUFDD_3p5.jpg" width="125" height="75"></h2></td>
+<td><h2><img src="images\07_EMUFDD_5p25.jpg" alt="07_EMUFDD_5p25.jpg" width="125" height="75"></h2></td>
+<td><h2><img src="images\08_EMUFDD_26_SLIM.jpg" alt="08_EMUFDD_26_SLIM.jpg" width="125" height="75"></h2></td>
+</tr>
+</table>
+
+<h3><i>Esempi di drive emulati da EMUHDD e EMUFDD</i></h3>
+
+<br>
+
+<table><tr><td>
+<div class="left">
+<ol>
+<li style="margin-left:20px;"><h2><i>Perch&#233; &#232; un retrofit permanente per il vostro macchinario</i></h2></li>
+<li style="margin-left:20px;"><h2><i>Supporta robot, apparecchiature per semiconduttori, CNC, macchinari industriali</i></h2></li>
+<li style="margin-left:20px;"><h2><i>Funzioner&#224; 24/7 in qualsiasi ambiente industriale difficile per molti anni</i></h2></li>
+<li style="margin-left:20px;"><h2><i>&#200; la miglior soluzione disponibile sul mercato: 0% di errori e malfunzionamenti</i></h2></li>
+<li style="margin-left:20px;"><h2><i>10+ anni di esperienza sul campo su 200+ tipi differenti di macchinari</i></h2></li>
+<li style="margin-left:20px;"><h2><i>La rete TCP/IP &#232; 80x pi&#249; veloce di una seriale RS232</i></h2></li>
+<li style="margin-left:20px;"><h2><i>Ogni prodotto include soluzioni software per il backup/restore</i></h2></li>
+<li style="margin-left:20px;"><h2><i>L'hardware &#232; prodotto in USA/EU, usando componenti industrial grade</i></h2></li>
+<li style="margin-left:20px;"><h2><i>Supporto diretto e installazione dal produttore</i></h2></li>
+<li style="margin-left:20px;"><h2><i>Servizi tutto-incluso di digitalizzazione e clonazione</i></h2></li>
+</ol>
+</div>
+</td></tr></table>
+
+<br>
+
+<table>
+<tr>
+<td><h2><img src="images\09_robot_emulator.jpg" alt="1_robot_emulator.jpg" width="125" height="75"></h2></td>
+<td>&nbsp;</td>
+<td><h2><img src="images\10_semiconductor_emulator.jpg" alt="2_semiconductor_emulator.jpg" width="125" height="75"></h2></td>
+<td>&nbsp;</td>
+<td><h2><img src="images\11_cnc_emulator.jpg" alt="3_cnc_emulator.jpg" width="125" height="75"></h2></td>
+<td>&nbsp;</td>
+<td><h2><img src="images\12_industrial_machinery_emulator.jpg" alt="4_industrial_machinery_emulator.jpg" width="125" height="75"></h2></td>
+</tr>
+</table>
+
+<h3><i>Applicazioni: Robot, Apparecchiature per Semiconduttori, CNC, Macchinario Industriale</i></h3>
+
+<br>
+
+<a name="Features"></a>
+<h1>* * <b>Caratteristiche</b> * *</h1>
+
+<br>
+
+<table><tr>
+<td>
+<img src="images\EMUFDD_ETH_panel_medium.jpg" alt="EMUFDD_ETH_panel_medium.jpg" width="250" height="163"><br>
+<h3><i>Software PC di rete robusto e GUI</i></h3><br>
+<img src="images\EMUHDD_backup_software_medium.jpg" alt="EMUHDD_backup_software_medium.jpg" width="250" height="168"><br>
+<h3><i>Software PC per il backup/restore</i></h3>
+</td>
+<td>&nbsp;</td>
+<td><div class="left">
+
+<h3><b>Servizio tutto-incluso, dal macchinario alla soluzione:</b></h3>
+<ul>
+<li style="margin-left:20px;"><h3>Digitalizzazione di qualsiasi disco/drive speciale che deve essere clonato</h3></li>
+<li style="margin-left:20px;"><h3>Supporto per tutti i tipi di drive/dischi di boot, Win/Dos/Unix/...</h3></li>
+<li style="margin-left:20px;"><h3>Software PC facile per il backup/restore in formato ISO standard</h3></li>
+<li style="margin-left:20px;"><h3>Assistenza a domicilio e remota via Skype + training dell'operatore</h3></li>
+</ul>
+
+<br>
+
+<h3><b>Rete TCP/IP robusta:</b></h3>
+<ul>
+<li style="margin-left:20px;"><h3>Velocit&#224; TCP/IP reale 80x pi&#249; veloce di una seriale RS232</h3></li>
+<li style="margin-left:20px;"><h3>Interlock di emulazione/rete robusto per comunicazioni industriali</h3></li>
+<li style="margin-left:20px;"><h3>Accesso illimitato remoto e distribuito al macchinario</h3></li>
+<li style="margin-left:20px;"><h3>Scripting testuale avanzato per una perfetta integrazione DNC</h3></li>
+</ul>
+
+<br>
+
+<h3><b>Multi configurazione flessibile:</b></h3>
+<ul>
+<li style="margin-left:20px;"><h3>Emulazione completamente configurabile (nome, dimensione, tracce, settori...)</h3></li>
+<li style="margin-left:20px;"><h3>Configurazione jumper-free, senza stop/apertura/disinstallazione</h3></li>
+</ul>
+
+<br>
+
+<h3><b>Resistenza all'errore in ambienti industriali difficili:</b></h3>
+<ul>
+<li style="margin-left:20px;"><h3>Manutenzione preventiva ogni 1/5 anni, 0% di errori</h3></li>
+<li style="margin-left:20px;"><h3>Emulazione adattiva con correzione e compensazione del segnale</h3></li>
+<li style="margin-left:20px;"><h3>Logiche di IN/OUT potenziate con supporto fino a 50mA di segnale</h3></li>
+<li style="margin-left:20px;"><h3>Hardware, componenti e custodia robusti</h3></li>
+</ul>
+
+</div></td>
+</tr></table>
+
+<br>
+
+<table><tr>
+<td>
+<h2><a href="https://www.youtube.com/watch?v=mjdIWSwWQqE&list=PLkEqMIqA8TUmb2gMkS5c5VuKpvxGKKx4_">
+<img src="images\emufdd_floppy_disk_emulator_Network_video_official_demo.jpg" alt="emufdd_floppy_disk_emulator_Network_video_official_demo.jpg" width="200" height="125"></a><br>
+<b><a href="https://www.youtube.com/watch?v=mjdIWSwWQqE&list=PLkEqMIqA8TUmb2gMkS5c5VuKpvxGKKx4_">Video sulla Rete</a></b></h2>
+</td>
+<td>&nbsp;</td>
+<td>
+<h2><a href="https://www.youtube.com/watch?v=_C-EDjWvf0A&list=PLkEqMIqA8TUmb2gMkS5c5VuKpvxGKKx4_">
+<img src="images\emufdd_floppy_disk_emulator_Wireless_video_official_demo.jpg" alt="emufdd_floppy_disk_emulator_Wireless_video_official_demo.jpg" width="200" height="125"></a><br>
+<b><a href="https://www.youtube.com/watch?v=_C-EDjWvf0A&list=PLkEqMIqA8TUmb2gMkS5c5VuKpvxGKKx4_">Video sul Wireless</a></b></h2>
+</td>
+<td>&nbsp;</td>
+<td>
+<h2><a href="https://www.youtube.com/watch?v=PysF1sWGnYc&list=PLkEqMIqA8TUmb2gMkS5c5VuKpvxGKKx4_">
+<img src="images\emufdd_floppy_disk_emulator_USB_video_official_demo.jpg" alt="emufdd_floppy_disk_emulator_USB_video_official_demo.jpg" width="200" height="125"></a><br>
+<b><a href="https://www.youtube.com/watch?v=PysF1sWGnYc&list=PLkEqMIqA8TUmb2gMkS5c5VuKpvxGKKx4_">Video sull'USB</a></b></h2>
+</td>
+</tr></table>
+
+<br>
+
+<h3 align="justify">&#1575;&#1604;&#1602;&#1585;&#1589; &#1575;&#1604;&#1605;&#1585;&#1606; &#1575;&#1604;&#1605;&#1581;&#1575;&#1603;&#1610; - &#1575;&#1604;&#1602;&#1585;&#1589; &#1575;&#1604;&#1589;&#1604;&#1576; &#1575;&#1604;&#1605;&#1581;&#1575;&#1603;&#1610;
+- Emulador de disco duro - Emulador de disquete
+- Emulateur de disque dur - Emulateur de disquette
+- &#1044;&#1080;&#1089;&#1082;&#1086;&#1074;&#1086;&#1076; &#1075;&#1080;&#1073;&#1082;&#1080;&#1093; &#1076;&#1080;&#1089;&#1082;&#1086;&#1074; &#1101;&#1084;&#1091;&#1083;&#1103;&#1090;&#1086;&#1088; - &#1046;&#1077;&#1089;&#1090;&#1082;&#1080;&#1081; &#1076;&#1080;&#1089;&#1082; &#1101;&#1084;&#1091;&#1083;&#1103;&#1090;&#1086;&#1088;
+- &#30828;&#30424;&#20223;&#30495;&#22120; - &#36719;&#30424;&#20223;&#30495;&#22120;
+- &#54616;&#46300; &#46356;&#49828;&#53356; &#50640;&#48044;&#47112;&#51060;&#53552; - &#54540;&#47196;&#54588; &#50640;&#48044;&#47112;&#51060;&#53552;
+- &#1588;&#1576;&#1740;&#1607; &#1587;&#1575;&#1586; &#1601;&#1604;&#1575;&#1662;&#1740; &#1583;&#1740;&#1587;&#1705; - &#1588;&#1576;&#1740;&#1607; &#1587;&#1575;&#1586; &#1607;&#1575;&#1585;&#1583; &#1583;&#1740;&#1587;&#1705;
+- &#12495;&#12540;&#12489;&#12487;&#12451;&#12473;&#12463;&#12489;&#12521;&#12452;&#12502;&#12456;&#12511;&#12517;&#12524;&#12540;&#12479; - &#12501;&#12525;&#12483;&#12500;&#12540;&#12487;&#12451;&#12473;&#12463;&#12456;&#12511;&#12517;&#12524;&#12540;&#12479;
+- &#3650;&#3611;&#3619;&#3649;&#3585;&#3619;&#3617;&#3592;&#3635;&#3621;&#3629;&#3591;&#3630;&#3634;&#3619;&#3660;&#3604;&#3604;&#3636;&#3626;&#3585;&#3660; - &#3650;&#3611;&#3619;&#3649;&#3585;&#3619;&#3617;&#3592;&#3635;&#3621;&#3629;&#3591;&#3615;&#3621;&#3629;&#3611;&#3611;&#3637;&#3604;&#3636;&#3626;&#3585;&#3660;
+- gi&#7843; l&#7853;p &#273;&#297;a c&#7913;ng - gi&#7843; l&#7853;p &#273;&#297;a m&#7873;m
+- Festplatte emulator - Diskett emulator
+- Emulatore hard disk - Emulatore floppy disk</h3>
+
+<br>
+
+<a name="Security"></a>
+<h1>* * <b>Avvisi di sicurezza</b> * *</h1>
+
+<br>
+
+<div class="left">
+<table><tr><td>
+<div align="justify">
+
+<h3>L'installazione di un emulatore difettoso sulla vostra macchina &egrave; una grosso pericolo, specialmente quando si tratta di emulatori con difetti di progettazione interni che possono essere rilevati solo dopo un uso a lungo termine.<br><br>
+<b>Un elenco di segnalazioni di crash noti:</b></h3>
+<ul>
+<li style="margin-left:20px;"><h3><a href="doc\Embeddedsw_news_Security_alert_accudual_emulator_1.pdf">Accudual - SCSI emulator - crash test report</a></h3></li>
+<li style="margin-left:20px;"><h3><a href="doc\Embeddedsw_news_Security_alert_sintechi_emulator.pdf">Sintechi - CF/SDCARD emulator - crash test report</a></h3></li>
+<li style="margin-left:20px;"><h3><a href="doc\Embeddedsw_news_Security_alert_adtron_emulator.pdf">Adtron - SCSI emulator - crash test report</a></h3></li>
+<li style="margin-left:20px;"><h3><a href="doc\Embeddedsw_news_Security_alert_accudual_emulator_2.pdf">Accudual - SCSI emulator - crash test report</a></h3></li>
+</ul>
+
+</div>
+</td></tr></table>
+</div>
+
+<br>
+
+<a name="Software"></a>
+<h1>* * <b>Software</b> * *</h1>
+
+<br>
+
+<table border="1"><tr>
+
+<td><div class="left" style="margin:10px 10px 10px 10px;">
+<a name="IMG"></a>
+<h3><b>DOS 3.3</b> ISO image (.IMG) 1440KB +Mouse +Cdrom
+<a href="zip\Dos3p3.img">Disk1</a></h3>
+  
+<h3><b>DOS 5.0</b> ISO image (.IMG) 1440KB +Mouse +Cdrom
+<a href="zip\Dos5p0_disk1.img">Disk1</a>
+<a href="zip\Dos5p0_disk2.img">Disk2</a></h3>
+
+<h3><b>DOS 6.22</b> ISO image (.IMG) 1440KB +Mouse +Cdrom
+<a href="zip\Dos6p22_disk1.img">Disk1</a>
+<a href="zip\Dos6p22_disk2.img">Disk2</a>
+<a href="zip\Dos6p22_disk3.img">Disk3</a>
+<a href="zip\Dos6p22_disk4.img">Disk4</a>
+<a href="zip\Dos6p22_disk5.img">Disk5</a></h3>
+
+<h3><b>Formatted Empty</b> ISO image (.IMG) FAT12 floppy
+<a href="zip\emufdd144.img">1440KB</a>
+<a href="zip\emufdd120.img">1200KB</a>
+<a href="zip\emufdd720.img">720KB</a>
+<a href="zip\emufdd640.img">640KB</a>
+<a href="zip\emufdd360.img">360KB</a></h3>
+
+<h3><b>DOS Utilities</b> ISO image (.ISO) +Commander +Zip
+<a href="zip\cd_dosutil_zip_nc5.iso">Disk1</a></h3>
+</div></td>
+
+</tr><tr>
+
+<td><div class="left" style="margin:10px 10px 10px 10px;">
+<a name="VFD"></a>
+<h2>
+<a href="zip\vfd21-080206_simplified.zip">
+<img src="images\SimplifiedVFD.jpg" alt="SimplifiedVFD.jpg"> Virtual Floppy Drive (VFD) Semplificato</a>
+ / <a href="zip\dseo13b.exe"><img src="images\Dseo13b.jpg" alt="Dseo13b.jpg"> WorkAround 64bit</a>
+</h2>
+
+<br>
+
+<h3>Un drive floppy virtuale che monta immagini floppy ISO (*.img) come nuove risorse navigabili del computer.</h3>
+<h3>Testato da WinXP (32bit) a Win7 (64bit).</h3>
+<h3><b>Open source & gratuito</b>.</h3>
+</div></td>
+
+</tr><tr>
+
+<td><div class="left" style="margin:10px 10px 10px 10px;">
+<a name="RAWWRITE"></a>
+<h2>
+<a href="zip\rawwritewin-0.7.zip">
+<img src="images\EMUFDD_rawwrite.jpg" alt="EMUFDD_rawwrite.jpg"> Raw Write</a>
+/ <a href="zip\Sectedit.zip">SectEdit</a>
+</h2>
+
+<br>
+
+<h3>Uno strumento di basso livello che permette di leggere e scrivere immagini floppy ISO (*.img).</h3>
+<h3>Testato su dischi floppy high-density DOS/non DOS: 1.44MB</h3>
+<h3><b>Open source & gratuito</b>.</h3>
+</div></td>
+
+</tr><tr>
+
+<td><div class="left" style="margin:10px 10px 10px 10px;">
+<a name="OMNIFLOP"></a>
+<h2>
+<a href="zip\OmniFlop-3.0b.zip">
+<img src="images\EMUFDD_omniflop.jpg" alt="EMUFDD_omniflop.jpg"> OmniFlop</a>
+</h2>
+
+<br>
+
+<h3>Uno strumento di ultra basso livello che permette di leggere e scrivere immagini floppy ISO (*.img).</h3>
+<h3>Testato su dischi floppy di qualsiasi densit&#224; DOS/non DOS: 640KB/720KB/800KB/1.2MB/1.44MB/...<br>
+Funziona solo con drive floppy interni (= non USB).</h3>
+<h3><b>Gratuito</b>.</h3>
+</div></td>
+
+</tr></table>
+
+<br>
+
+<a name="Machinery"></a>
+<h1>* * <b>Guida Macchinari</b> * *</h1>
+
+<br>
+
+<script type="text/javascript" src="styles\emufdd_machinery_full.js"></script>
+
+<br>
+
+<a name="Drives"></a>
+<h1>* * <b>Guida HDD e FDD</b> * *</h1>
+
+<br>
+
+<script type="text/javascript" src="styles\emufdd_guide.js"></script>
+
+<br>
+
+<a name="Jumpering"></a>
+<h1>* * <b>FDD Jumpering</b> * *</h1>
+
+<br>
+
+<table border="1">
+<tr>
+<td><div class="left" style="margin:10px 10px 10px 10px;"><h3><a href="EMUFDD_TEAC_Jumpers.html">TEAC</a></h3></div></td>
+<td><a href="EMUFDD_TEAC_Jumpers.html"><img src="images\teac_4raws_jumper_little.jpg" alt="teac_4raws_jumper_little.jpg" width="250" height="100"></a></td>
+</tr>
+<tr>
+<td><div class="left" style="margin:10px 10px 10px 10px;"><h3><a href="EMUFDD_MITSUMI_Jumpers.html">MITSUMI</a></h3></div></td>
+<td><a href="EMUFDD_MITSUMI_Jumpers.html"><img src="images\mitsumi_D509V_jumper_little.jpg" alt="mitsumi_D509V_jumper_little.jpg" width="250" height="150"></a></td>
+</tr>
+<tr>
+<td><div class="left" style="margin:10px 10px 10px 10px;"><h3><a href="EMUFDD_MITSUBISHI_Jumpers.html">MITSUBISHI</a></h3></div></td>
+<td><a href="EMUFDD_MITSUBISHI_Jumpers.html"><img src="images\mitsubishi_MF353B_jumper_little.jpg" alt="mitsubishi_MF353B_jumper_little.jpg" width="250" height="150"></a></td>
+</tr>
+<tr>
+<td><div class="left" style="margin:10px 10px 10px 10px;"><h3><a href="EMUFDD_YEDATA_Jumpers.html">YE-DATA</a></h3></div></td>
+<td><a href="EMUFDD_YEDATA_Jumpers.html"><img src="images\yedata_702D_14_jumper_little.jpg" alt="yedata_702D_14_jumper_little.jpg" width="250" height="81"></a></td>
+</tr>
+</table>
+
+<br>
+
+</div>
+<!-- *** text-margin END -->
+
+</div>
+<!-- *** centerbar END -->
+
+<!-- ** footer BEGIN ** -->
+<div id="footer" align="center">
+
+&nbsp;<br>
+
+<script type="text/javascript" src="styles\footer.js"></script>
+
+</div>
+<!-- ** footer END -->
+
+</div>
+<!-- ** general END ** -->
+
+</div>
+<!-- * main END -->
+
+</body>
+</html>

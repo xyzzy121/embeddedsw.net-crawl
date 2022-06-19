@@ -1,0 +1,904 @@
+Uri: https://codice.shinystat.com/cgi-bin/getcod.cgi?USER=puffv2
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\cgi-bin\getcod.cgi
+Content Type: application/x-javascript
+
+Uri: https://embeddedsw.net/
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\index.htm
+Content Type: text/html
+
+Uri: https://embeddedsw.net/bitcoin.php
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\bitcoin.php.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/bitcoin_value.php
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\bitcoin_value.php.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/Cipher_Reference_Home.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\Cipher_Reference_Home.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/dash.php
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\dash.php.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/dash_value.php
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\dash_value.php.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/doc/Embeddedsw_news_Security_alert_accudual_emulator_1.pdf
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\doc\Embeddedsw_news_Security_alert_accudual_emulator_1.pdf
+Content Type: application/pdf
+
+Uri: https://embeddedsw.net/doc/Embeddedsw_news_Security_alert_accudual_emulator_2.pdf
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\doc\Embeddedsw_news_Security_alert_accudual_emulator_2.pdf
+Content Type: application/pdf
+
+Uri: https://embeddedsw.net/doc/Embeddedsw_news_Security_alert_adtron_emulator.pdf
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\doc\Embeddedsw_news_Security_alert_adtron_emulator.pdf
+Content Type: application/pdf
+
+Uri: https://embeddedsw.net/doc/Embeddedsw_news_Security_alert_sintechi_emulator.pdf
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\doc\Embeddedsw_news_Security_alert_sintechi_emulator.pdf
+Content Type: application/pdf
+
+Uri: https://embeddedsw.net/doc/emufdd_ETH_hw_manual.pdf
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\doc\emufdd_ETH_hw_manual.pdf
+Content Type: application/pdf
+
+Uri: https://embeddedsw.net/doc/emufdd_USB_hw_manual.pdf
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\doc\emufdd_USB_hw_manual.pdf
+Content Type: application/pdf
+
+Uri: https://embeddedsw.net/doc/emuhdd_IDE_manual.pdf
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\doc\emuhdd_IDE_manual.pdf
+Content Type: application/pdf
+
+Uri: https://embeddedsw.net/doc/emuhdd_SCSI_manual.pdf
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\doc\emuhdd_SCSI_manual.pdf
+Content Type: application/pdf
+
+Uri: https://embeddedsw.net/doc/libObfuscate_Help_EN.pdf
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\doc\libObfuscate_Help_EN.pdf
+Content Type: application/pdf
+
+Uri: https://embeddedsw.net/Embeddedsw_privacy.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\Embeddedsw_privacy.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/EMUFDD_Custom_Installation.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\EMUFDD_Custom_Installation.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/EMUFDD_Floppy_Hardware_Emulator_Home.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\EMUFDD_Floppy_Hardware_Emulator_Home.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/EMUFDD_Floppy_Hardware_Emulator_Home_es.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\EMUFDD_Floppy_Hardware_Emulator_Home_es.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/EMUFDD_Floppy_Hardware_Emulator_Home_it.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\EMUFDD_Floppy_Hardware_Emulator_Home_it.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/EMUFDD_MITSUBISHI_Jumpers.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\EMUFDD_MITSUBISHI_Jumpers.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/EMUFDD_MITSUMI_Jumpers.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\EMUFDD_MITSUMI_Jumpers.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/EMUFDD_TEAC_Jumpers.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\EMUFDD_TEAC_Jumpers.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/EMUFDD_YEDATA_Jumpers.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\EMUFDD_YEDATA_Jumpers.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/images/01_EMUFDD_IDE_ATA.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\01_EMUFDD_IDE_ATA.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/02_EMUHDD_IDE_PATA.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\02_EMUHDD_IDE_PATA.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/03_EMUHDD_SCSI_ULTRA.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\03_EMUHDD_SCSI_ULTRA.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/04_EMUHDD_SCSI_I_II.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\04_EMUHDD_SCSI_I_II.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/05_EMUHDD_MO_ZIP.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\05_EMUHDD_MO_ZIP.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/06_EMUFDD_3p5.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\06_EMUFDD_3p5.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/07_EMUFDD_5p25.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\07_EMUFDD_5p25.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/08_EMUFDD_26_SLIM.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\08_EMUFDD_26_SLIM.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/09_robot_emulator.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\09_robot_emulator.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/10_semiconductor_emulator.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\10_semiconductor_emulator.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/11_cnc_emulator.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\11_cnc_emulator.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/12_industrial_machinery_emulator.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\12_industrial_machinery_emulator.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/csprng1.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\csprng1.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/csprng1_little.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\csprng1_little.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/csprng2.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\csprng2.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/csprng2_little.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\csprng2_little.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/Dseo13b.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\Dseo13b.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/embeddedsw_banner_hardware_1.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\embeddedsw_banner_hardware_1.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/embeddedsw_banner_hardware_2.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\embeddedsw_banner_hardware_2.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/embeddedsw_banner_machinery_1.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\embeddedsw_banner_machinery_1.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/embeddedsw_banner_machinery_2.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\embeddedsw_banner_machinery_2.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/embeddedsw_banner_security_1.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\embeddedsw_banner_security_1.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/embeddedsw_banner_security_2.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\embeddedsw_banner_security_2.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/embeddedsw_banner_software_1.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\embeddedsw_banner_software_1.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/embeddedsw_banner_software_2.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\embeddedsw_banner_software_2.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/embeddedsw_banner_solidstate_1.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\embeddedsw_banner_solidstate_1.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/embeddedsw_banner_solidstate_2.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\embeddedsw_banner_solidstate_2.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/EMUFDD_custom_floppy_emulator.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\EMUFDD_custom_floppy_emulator.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/EMUFDD_ETH_front_little.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\EMUFDD_ETH_front_little.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/EMUFDD_ETH_panel_medium.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\EMUFDD_ETH_panel_medium.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/emufdd_floppy_disk_emulator_Network_video_official_demo.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\emufdd_floppy_disk_emulator_Network_video_official_demo.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/emufdd_floppy_disk_emulator_USB_video_official_demo.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\emufdd_floppy_disk_emulator_USB_video_official_demo.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/emufdd_floppy_disk_emulator_Wireless_video_official_demo.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\emufdd_floppy_disk_emulator_Wireless_video_official_demo.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/EMUFDD_omniflop.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\EMUFDD_omniflop.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/EMUFDD_rawwrite.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\EMUFDD_rawwrite.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/EMUFDD_USB_front_little.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\EMUFDD_USB_front_little.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/EMUHDD_backup_software_medium.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\EMUHDD_backup_software_medium.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/EMUHDD_IDE_front_little.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\EMUHDD_IDE_front_little.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/EMUHDD_SCSI_front_little.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\EMUHDD_SCSI_front_little.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/flag_bg.png
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\flag_bg.png
+Content Type: image/png
+
+Uri: https://embeddedsw.net/images/flag_cz.png
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\flag_cz.png
+Content Type: image/png
+
+Uri: https://embeddedsw.net/images/flag_de.png
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\flag_de.png
+Content Type: image/png
+
+Uri: https://embeddedsw.net/images/flag_es.png
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\flag_es.png
+Content Type: image/png
+
+Uri: https://embeddedsw.net/images/flag_fr.png
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\flag_fr.png
+Content Type: image/png
+
+Uri: https://embeddedsw.net/images/flag_gr.png
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\flag_gr.png
+Content Type: image/png
+
+Uri: https://embeddedsw.net/images/flag_hu.png
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\flag_hu.png
+Content Type: image/png
+
+Uri: https://embeddedsw.net/images/flag_id.png
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\flag_id.png
+Content Type: image/png
+
+Uri: https://embeddedsw.net/images/flag_ir.png
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\flag_ir.png
+Content Type: image/png
+
+Uri: https://embeddedsw.net/images/flag_it.png
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\flag_it.png
+Content Type: image/png
+
+Uri: https://embeddedsw.net/images/flag_ja.png
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\flag_ja.png
+Content Type: image/png
+
+Uri: https://embeddedsw.net/images/flag_kr.png
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\flag_kr.png
+Content Type: image/png
+
+Uri: https://embeddedsw.net/images/flag_nl.png
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\flag_nl.png
+Content Type: image/png
+
+Uri: https://embeddedsw.net/images/flag_pl.png
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\flag_pl.png
+Content Type: image/png
+
+Uri: https://embeddedsw.net/images/flag_pt.png
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\flag_pt.png
+Content Type: image/png
+
+Uri: https://embeddedsw.net/images/flag_ro.png
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\flag_ro.png
+Content Type: image/png
+
+Uri: https://embeddedsw.net/images/flag_ru.png
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\flag_ru.png
+Content Type: image/png
+
+Uri: https://embeddedsw.net/images/flag_sa.png
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\flag_sa.png
+Content Type: image/png
+
+Uri: https://embeddedsw.net/images/flag_sk.png
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\flag_sk.png
+Content Type: image/png
+
+Uri: https://embeddedsw.net/images/flag_th.png
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\flag_th.png
+Content Type: image/png
+
+Uri: https://embeddedsw.net/images/flag_tr.png
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\flag_tr.png
+Content Type: image/png
+
+Uri: https://embeddedsw.net/images/flag_ua.png
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\flag_ua.png
+Content Type: image/png
+
+Uri: https://embeddedsw.net/images/flag_us.png
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\flag_us.png
+Content Type: image/png
+
+Uri: https://embeddedsw.net/images/flag_vn.png
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\flag_vn.png
+Content Type: image/png
+
+Uri: https://embeddedsw.net/images/flag_zh.png
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\flag_zh.png
+Content Type: image/png
+
+Uri: https://embeddedsw.net/images/lambda.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\lambda.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/mitsubishi_MF353B_jumper.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\mitsubishi_MF353B_jumper.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/mitsubishi_MF353B_jumper_little.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\mitsubishi_MF353B_jumper_little.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/mitsubishi_MF353B_sch.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\mitsubishi_MF353B_sch.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/mitsubishi_MF353_jumper.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\mitsubishi_MF353_jumper.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/mitsubishi_MF353_sch.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\mitsubishi_MF353_sch.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/mitsubishi_MF355F_jumper.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\mitsubishi_MF355F_jumper.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/mitsubishi_MF355F_sch.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\mitsubishi_MF355F_sch.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/mitsubishi_MF355_jumper.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\mitsubishi_MF355_jumper.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/mitsubishi_MF355_sch.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\mitsubishi_MF355_sch.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/mitsumi_D359T3_jumper.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\mitsumi_D359T3_jumper.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/mitsumi_D359T3_sch.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\mitsumi_D359T3_sch.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/mitsumi_D509V_jumper.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\mitsumi_D509V_jumper.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/mitsumi_D509V_jumper_little.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\mitsumi_D509V_jumper_little.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/mitsumi_D509V_sch.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\mitsumi_D509V_sch.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/multi_cr1.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\multi_cr1.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/multi_cr1_little.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\multi_cr1_little.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/multi_cr2.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\multi_cr2.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/multi_cr2_little.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\multi_cr2_little.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/multi_cr3.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\multi_cr3.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/multi_cr3_little.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\multi_cr3_little.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/pdf.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\pdf.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/SimplifiedVFD.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\SimplifiedVFD.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/support_trasp.gif
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\support_trasp.gif
+Content Type: image/gif
+
+Uri: https://embeddedsw.net/images/teac_2raws_jumper.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\teac_2raws_jumper.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/teac_2raws_sch.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\teac_2raws_sch.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/teac_3raws_jumper.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\teac_3raws_jumper.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/teac_3raws_sch.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\teac_3raws_sch.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/teac_4raws_jumper.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\teac_4raws_jumper.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/teac_4raws_jumper_little.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\teac_4raws_jumper_little.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/teac_4raws_sch.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\teac_4raws_sch.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/teac_FD135_jumper.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\teac_FD135_jumper.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/teac_FD135_sch.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\teac_FD135_sch.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/teac_FD235HF_jumper.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\teac_FD235HF_jumper.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/teac_FD235HF_sch.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\teac_FD235HF_sch.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/teac_min_jumper.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\teac_min_jumper.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/yedata_702D_12_jumper.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\yedata_702D_12_jumper.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/yedata_702D_12_sch.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\yedata_702D_12_sch.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/yedata_702D_14_jumper.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\yedata_702D_14_jumper.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/yedata_702D_14_jumper_little.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\yedata_702D_14_jumper_little.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/yedata_702D_14_sch.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\yedata_702D_14_sch.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/images/zip.jpg
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\images\zip.jpg
+Content Type: image/jpeg
+
+Uri: https://embeddedsw.net/libObfuscate_Cryptography_Home.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\libObfuscate_Cryptography_Home.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/libObfuscate_download.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\libObfuscate_download.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/litecoin.php
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\litecoin.php.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/litecoin_value.php
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\litecoin_value.php.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/OpenPuff_download.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\OpenPuff_download.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/OpenPuff_Steganography_Home.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\OpenPuff_Steganography_Home.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/OpenPuff_Steganography_Home_bg.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\OpenPuff_Steganography_Home_bg.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/OpenPuff_Steganography_Home_cz.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\OpenPuff_Steganography_Home_cz.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/OpenPuff_Steganography_Home_de.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\OpenPuff_Steganography_Home_de.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/OpenPuff_Steganography_Home_es.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\OpenPuff_Steganography_Home_es.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/OpenPuff_Steganography_Home_fr.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\OpenPuff_Steganography_Home_fr.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/OpenPuff_Steganography_Home_gr.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\OpenPuff_Steganography_Home_gr.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/OpenPuff_Steganography_Home_hu.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\OpenPuff_Steganography_Home_hu.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/OpenPuff_Steganography_Home_id.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\OpenPuff_Steganography_Home_id.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/OpenPuff_Steganography_Home_ir.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\OpenPuff_Steganography_Home_ir.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/OpenPuff_Steganography_Home_it.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\OpenPuff_Steganography_Home_it.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/OpenPuff_Steganography_Home_ja.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\OpenPuff_Steganography_Home_ja.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/OpenPuff_Steganography_Home_kr.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\OpenPuff_Steganography_Home_kr.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/OpenPuff_Steganography_Home_nl.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\OpenPuff_Steganography_Home_nl.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/OpenPuff_Steganography_Home_pl.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\OpenPuff_Steganography_Home_pl.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/OpenPuff_Steganography_Home_pt.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\OpenPuff_Steganography_Home_pt.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/OpenPuff_Steganography_Home_ro.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\OpenPuff_Steganography_Home_ro.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/OpenPuff_Steganography_Home_ru.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\OpenPuff_Steganography_Home_ru.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/OpenPuff_Steganography_Home_sa.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\OpenPuff_Steganography_Home_sa.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/OpenPuff_Steganography_Home_sk.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\OpenPuff_Steganography_Home_sk.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/OpenPuff_Steganography_Home_th.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\OpenPuff_Steganography_Home_th.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/OpenPuff_Steganography_Home_tr.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\OpenPuff_Steganography_Home_tr.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/OpenPuff_Steganography_Home_ua.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\OpenPuff_Steganography_Home_ua.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/OpenPuff_Steganography_Home_vn.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\OpenPuff_Steganography_Home_vn.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/OpenPuff_Steganography_Home_zh.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\OpenPuff_Steganography_Home_zh.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/Randomness_Test_Home.html
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\Randomness_Test_Home.html
+Content Type: text/html
+
+Uri: https://embeddedsw.net/styles/back.gif
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\styles\back.gif
+Content Type: image/gif
+
+Uri: https://embeddedsw.net/styles/contact.js
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\styles\contact.js
+Content Type: application/javascript
+
+Uri: https://embeddedsw.net/styles/emufdd_guide.js
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\styles\emufdd_guide.js
+Content Type: application/javascript
+
+Uri: https://embeddedsw.net/styles/emufdd_machinery.js
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\styles\emufdd_machinery.js
+Content Type: application/javascript
+
+Uri: https://embeddedsw.net/styles/emufdd_machinery_full.js
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\styles\emufdd_machinery_full.js
+Content Type: application/javascript
+
+Uri: https://embeddedsw.net/styles/emufdd_slideshow.js
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\styles\emufdd_slideshow.js
+Content Type: application/javascript
+
+Uri: https://embeddedsw.net/styles/footer.js
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\styles\footer.js
+Content Type: application/javascript
+
+Uri: https://embeddedsw.net/styles/jquery.js
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\styles\jquery.js
+Content Type: application/javascript
+
+Uri: https://embeddedsw.net/styles/logo.gif
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\styles\logo.gif
+Content Type: image/gif
+
+Uri: https://embeddedsw.net/styles/menu.css
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\styles\menu.css
+Content Type: text/css
+
+Uri: https://embeddedsw.net/styles/menu.js
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\styles\menu.js
+Content Type: application/javascript
+
+Uri: https://embeddedsw.net/styles/openpuff_box_1.js
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\styles\openpuff_box_1.js
+Content Type: application/javascript
+
+Uri: https://embeddedsw.net/styles/openpuff_box_2.js
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\styles\openpuff_box_2.js
+Content Type: application/javascript
+
+Uri: https://embeddedsw.net/styles/openpuff_desc.js
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\styles\openpuff_desc.js
+Content Type: application/javascript
+
+Uri: https://embeddedsw.net/styles/openpuff_media.js
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\styles\openpuff_media.js
+Content Type: application/javascript
+
+Uri: https://embeddedsw.net/styles/qrcode.js
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\styles\qrcode.js
+Content Type: application/javascript
+
+Uri: https://embeddedsw.net/styles/style.css
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\styles\style.css
+Content Type: text/css
+
+Uri: https://embeddedsw.net/styles/submenu.js
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\styles\submenu.js
+Content Type: application/javascript
+
+Uri: https://embeddedsw.net/zip/Anubis_Original.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Anubis_Original.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/Camellia_Original.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Camellia_Original.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/Cast256_Original.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Cast256_Original.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/cd_dosutil_zip_nc5.iso
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\cd_dosutil_zip_nc5.iso
+Content Type: application/x-iso9660-image
+
+Uri: https://embeddedsw.net/zip/Clefia_Original.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Clefia_Original.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/DIEHARD_battery_of_test_of_randomness.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\DIEHARD_battery_of_test_of_randomness.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/Dos3p3.img
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Dos3p3.img
+Content Type: 
+
+Uri: https://embeddedsw.net/zip/Dos5p0_disk1.img
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Dos5p0_disk1.img
+Content Type: 
+
+Uri: https://embeddedsw.net/zip/Dos5p0_disk2.img
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Dos5p0_disk2.img
+Content Type: 
+
+Uri: https://embeddedsw.net/zip/Dos6p22_disk1.img
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Dos6p22_disk1.img
+Content Type: 
+
+Uri: https://embeddedsw.net/zip/Dos6p22_disk2.img
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Dos6p22_disk2.img
+Content Type: 
+
+Uri: https://embeddedsw.net/zip/Dos6p22_disk3.img
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Dos6p22_disk3.img
+Content Type: 
+
+Uri: https://embeddedsw.net/zip/Dos6p22_disk4.img
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Dos6p22_disk4.img
+Content Type: 
+
+Uri: https://embeddedsw.net/zip/Dos6p22_disk5.img
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Dos6p22_disk5.img
+Content Type: 
+
+Uri: https://embeddedsw.net/zip/dseo13b.exe
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\dseo13b.exe
+Content Type: application/x-msdos-program
+
+Uri: https://embeddedsw.net/zip/emufdd120.img
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\emufdd120.img
+Content Type: 
+
+Uri: https://embeddedsw.net/zip/emufdd144.img
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\emufdd144.img
+Content Type: 
+
+Uri: https://embeddedsw.net/zip/emufdd360.img
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\emufdd360.img
+Content Type: 
+
+Uri: https://embeddedsw.net/zip/emufdd640.img
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\emufdd640.img
+Content Type: 
+
+Uri: https://embeddedsw.net/zip/emufdd720.img
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\emufdd720.img
+Content Type: 
+
+Uri: https://embeddedsw.net/zip/Frog_Original.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Frog_Original.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/Grostl_Original.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Grostl_Original.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/HieroCrypt3_Original.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\HieroCrypt3_Original.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/IdeaNxt_Original.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\IdeaNxt_Original.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/Independent_research_project_Chi-Square.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Independent_research_project_Chi-Square.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/Keccak_Original.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Keccak_Original.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/libObfuscate_release.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\libObfuscate_release.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/Mars_Original.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Mars_Original.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/OmniFlop-3.0b.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\OmniFlop-3.0b.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/OpenPuff_release.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\OpenPuff_release.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/rawwritewin-0.7.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\rawwritewin-0.7.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/Rc6_Original.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Rc6_Original.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/Rijndael_Original.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Rijndael_Original.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/Safer+_Original.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Safer _Original.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/Sc2000_Original.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Sc2000_Original.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/Sectedit.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Sectedit.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/Serpent_Original.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Serpent_Original.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/Sha2_Original.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Sha2_Original.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/Skein_Original.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Skein_Original.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/Speed_Original.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Speed_Original.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/Twofish_Original.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Twofish_Original.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/UnicornA_Original.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\UnicornA_Original.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/vfd21-080206_simplified.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\vfd21-080206_simplified.zip
+Content Type: application/zip
+
+Uri: https://embeddedsw.net/zip/Ziggurat_random_number_generator.zip
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\zip\Ziggurat_random_number_generator.zip
+Content Type: application/zip
+
+Uri: https://s12.shinystat.com/cgi-bin/shinystat.cgi?USER=puffv2&NRD=1-0b
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\cgi-bin\shinystat.cgi
+Content Type: image/png
+
+Uri: https://www.gnu.org/graphics/lgplv3-88x31.png
+File Name: C:\Users\ls356\Downloads\embeddedsw.net\graphics\lgplv3-88x31.png
+Content Type: image/png
+

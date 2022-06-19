@@ -1,0 +1,1573 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>libObfuscate - Cryptography &amp; Obfuscation</title>
+<meta name="description" content="libObfuscate Cryptography & Obfuscation. Cryptography - 256 bit ciphers. Hashing - 512 bit functions. Reference source code and submissions to international cryptographic designs contests.">
+<meta name="keywords" content="libObfuscate, obfuscation, 256 bit cryptography, 512 bit hashing functions, reference source code, submission, open source, deniable, aes, anubis, camellia, cast256, clefia, frog, hierocrypt3, idea-nxt, mars, rc6, safer+, sc2000, serpent, speed, twofish, unicorn-a, grostl, keccak, sha2, skein">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link type="text/css" rel="stylesheet" href="styles\style.css">
+<link type="text/css" rel="stylesheet" href="styles\menu.css">
+
+</head>
+
+<body>
+
+<!-- * main BEGIN -->
+<div id="main">
+
+<!-- **** contact BEGIN -->
+<div id="contact">
+
+<script type="text/javascript" src="styles\contact.js"></script>
+
+</div>
+<!-- **** contact END -->
+
+<!-- ** general BEGIN -->
+<div id="general">
+
+<!-- ** header-cont BEGIN -->
+<div id="header_cont">
+
+<div id="cssmenu">
+<script type="text/javascript" src="styles\menu.js"></script>
+</div>
+
+<div id="header-title">
+<script type="text/javascript" src="styles\submenu.js"></script>
+</div>
+
+</div>
+<!-- ** header-cont END -->
+
+<!-- *** centerbar BEGIN -->
+<div id="centerbar">
+
+<!-- *** text-margin BEGIN -->
+<div id="text_margin" align="center">
+
+<h3 align="left" style="font-variant:small-caps;"><a href="index.htm"><b>Home</b></a> > <b>Software</b> > <b>libObfuscate Cryptography</b></h3>
+
+<br>
+
+<h1>libObfuscate<br>
+ISO C / open-source / system independent</h1>
+
+<br>
+
+<h2>Modern 256bit cryptography / scrambling<br><a href="Cipher_Reference_Home.html"><i>references and links (*)</i></a></h2>
+
+<br>
+
+<div class="left">
+<ul>
+<li style="margin-left:20px"><h3>How to:<br>
+<a href="#HOWTOLINK">Link to your C project</a>
+</h3></li>
+<li style="margin-left:20px"><h3>CSPRNG - Based on AES:<br>
+<a href="#CSPRNG-SEED">Seed</a>
+<a href="#CSPRNG-FUN">Functions</a>
+</h3></li>
+<li style="margin-left:20px"><h3>Hashing - 512bit:<br>
+<a href="#GROSTL">Grostl</a>
+<a href="#KECCAK">Keccak</a>
+<a href="#SHA2">SHA2</a>
+<a href="#SKEIN">Skein</a>
+</h3></li>
+<li style="margin-left:20px"><h3>Cryptography - 256bit - ECB - 128bit block:<br>
+<a href="#AES">AES</a>
+<a href="#ANUBIS">Anubis</a>
+<a href="#CAMELLIA">Camellia</a>
+<a href="#CAST-256">Cast-256</a>
+<a href="#CLEFIA">Clefia</a>
+<a href="#FROG">FROG</a>
+<a href="#HIEROCRYPT3">Hierocrypt3</a>
+<a href="#IDEA-NXT">Idea-NXT</a><br>
+<a href="#MARS">MARS</a>
+<a href="#RC6">RC6</a>
+<a href="#SAFER+">Safer+</a>
+<a href="#SC2000">SC2000</a>
+<a href="#SERPENT">Serpent</a>
+<a href="#SPEED">Speed</a>
+<a href="#TWOFISH">Twofish</a>
+<a href="#UNICORN-A">Unicorn-A</a>
+<a href="#WRAPPER">Wrapper</a>
+</h3></li>
+<li style="margin-left:20px"><h3>Multi-cryptography:<br>
+<a href="#MULTI-C">256 + 256bit - CBC - Segment</a>
+</h3></li>
+</ul>
+</div>
+
+<br>
+
+<table border="1"><tr>
+
+<td><div style="margin:10px 10px 10px 10px;">
+
+<h3><b><a href="libObfuscate_download.html" target="_blank"><img src="images\zip.jpg" alt="zip.jpg"> Download (source &amp; redistributable Windows DLL)</a></b>
+<a href="http://www.gnu.org/licenses/lgpl.html"><img src="graphics\lgplv3-88x31.png" alt="LGPL 3.0" width="88" height="31"></a></h3>
+
+<h4>&nbsp;</h4>
+
+<h3><b><a href="doc\libObfuscate_Help_EN.pdf"><img src="images\pdf.jpg" alt="pdf.jpg"> Manual</a></b>
+- <b><a href="https://sourceforge.net/projects/libobfuscate/"><img src="images\lambda.jpg" alt="lambda.jpg"> libObfuscate on SourceForge</a></b></h3>
+
+<h4>&nbsp;</h4>
+
+</div></td>
+
+</tr></table>
+
+<br>
+
+<!-- *************************************************************************** -->
+
+<a name="HOWTOLINK"></a>
+<h2><b>How to: Link to your C project</b></h2>
+
+<br>
+
+<table border="1"><tr>
+
+<td><div style="margin:10px 10px 10px 10px;">
+
+<div class="left">
+<ul>
+<li style='margin-left:20px'><h3>go to <b>\libObfuscateRedist\</b></h3></li>
+<li style='margin-left:20px'><h3>add <b>libObfuscateDef\*.h</b> to your source</h3></li> 
+<li style='margin-left:20px'><h3>add <b>libObfuscateDef.h</b> to your source</h3></li>
+<li style='margin-left:20px'><h3>add <b>libObfuscate.h</b> to your source</h3></li>
+<li style='margin-left:20px'><h3>add <b>#include "libObfuscate.h"</b> to your files</h3></li>
+<li style='margin-left:20px'><h3>link using <b>libObfuscate.lib</b></h3></li>
+<li style='margin-left:20px'><h3>add <b>libObfuscate.dll</b> (no dependencies) to your release</h3></li>
+<li style='margin-left:20px'><h3>add full licensing <b>license.txt</b> to your release</h3></li>
+</ul>
+</div>
+
+</div></td>
+
+</tr></table>
+
+<br>
+
+<!-- *************************************************************************** -->
+
+<a name="CSPRNG-SEED"></a>
+<h2><b><a href="https://en.wikipedia.org/wiki/CSPRNG">CSPRNG</a> - Based on AES: Seed</b></h2>
+
+<br>
+
+<table border="1">
+
+<tr>
+<td valign="top"><div style="margin:10px 10px 10px 10px;">
+<h3>Manual Seed : <i>Seed = { Key , <a href="https://en.wikipedia.org/wiki/Block_cipher_modes_of_operation#Counter_.28CTR.29">CTR</a> } = Hash ( passw , <a href="https://en.wikipedia.org/wiki/Cryptographic_nonce">nonce</a> )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>CSPRNG_DATA</b> csprng;<br>
+BYTE passw [32];<br>
+DWORD nonce;<br>
+ENUM_HASH hash; // <i>hash = SHA512_HASH / ...</i><br>
+<br>
+<b>CSPRNG_set_seed</b>( &amp;csprng , hash , passw , nonce );<br>
+</h3>
+</div>
+</div></td>
+<td valign="top"><div style="margin:10px 10px 10px 10px;" class="left">
+<h3>
+typedef enum {<br>
+SHA512_HASH=0,<br>
+GROSTL512_HASH,<br>
+KECCAK512_HASH,<br>
+SKEIN512_HASH<br>
+} ENUM_HASH;
+</h3>
+</div></td>
+</tr>
+
+<tr>
+<td valign="top"><div style="margin:10px 10px 10px 10px;">
+<h3>HW AutoSeed : <i>Seed = { Key , CTR } = <a href="https://en.wikipedia.org/wiki/Race_condition">RaceCondition</a> ( )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>CSPRNG_DATA</b> csprng;<br>
+<br>
+<b>anyType</b> pDesc; <i>// progress descriptor</i><br>
+<br>
+<i>// pCall = NULL &amp;&amp; pDesc = NULL &rarr; no progress callback</i><br>
+<b>CSPRNG_autoseed</b>( &amp;csprng , pCall , pDesc );
+</h3>
+</div>
+</div></td>
+<td valign="top"><div style="margin:10px 10px 10px 10px;">
+<h3><b>Architecture</b></h3><br>
+<img src="images\csprng1_little.jpg" alt="csprng1_little.jpg"><br>
+<h3><a href="images\csprng1.jpg">Enlarge</a></h3>
+</div></td>
+</tr>
+
+<tr>
+<td valign="top"><div style="margin:10px 10px 10px 10px;">
+<h3>User interaction callback</h3>
+
+<br>
+
+<div class="left">
+<h3>
+<i>// progress callback</i><br>
+void pCall( void *desc , BYTE perc )<br>
+{<br>
+<b>anyType1</b> desc' = ( <b>anyType1</b> ) desc;<br>
+<br>
+<i>// show perc = 0..100 %</i><br>
+...<br>
+}
+</h3>
+</div>
+</div></td>
+<td valign="top"><div style="margin:10px 10px 10px 10px;">
+<h3><b>HW AutoSeed</b></h3><br>
+<img src="images\csprng2_little.jpg" alt="csprng2_little.jpg"><br>
+<h3><a href="images\csprng2.jpg">Enlarge</a></h3>
+</div></td>
+</tr>
+
+</table>
+
+<br>
+
+<!-- *************************************************************************** -->
+
+<a name="CSPRNG-FUN"></a>
+<h2><b>CSPRNG - Based on AES: Functions</b></h2>
+
+<br>
+
+<table border="1">
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Functions</h3>
+
+<br>
+
+<div class="left">
+<h3>
+BYTE bValue = <b>CSPRNG_get_byte</b>( &amp;csprng );<br>
+WORD wValue = <b>CSPRNG_get_word</b>( &amp;csprng );<br>
+DWORD dValue = <b>CSPRNG_get_dword</b>( &amp;csprng );<br>
+...<br><br>
+BYTE *array; <i>// BYTE array [len]</i><br>
+<br>
+<i>// fill array with a random permutation of { 0..len }</i><br>
+<i>// simple implementation - slow - keep len little </i><br>
+<b>CSPRNG_array_init</b>( &amp;csprng , <i>len</i> , array );<br>
+...<br><br>
+BYTE *buf; <i>// BYTE buf [len]</i><br>
+<br>
+<b>anyType1</b> pDesc; <i>// progress descriptor</i><br>
+<b>anyType2</b> sDesc; <i>// stopTest descriptor</i><br>
+<br>
+<i>// pCall = NULL &amp;&amp; pDesc = NULL &rarr; no progress callback</i><br>
+<i>// sCall = NULL &amp;&amp; sDesc = NULL &rarr; no stopTest callBack</i><br>
+switch( <b>CSPRNG_randomize</b>( &amp;csprng , <i>len</i> , buf , pCall , pDesc , sCall , sDesc ) )<br>
+{<br>
+case OBFUNC_STOP: <i>// stopped</i><br>
+case OBFUNC_OK: <i>// ok</i><br>
+}
+</h3>
+</div>
+</div></td>
+</tr>
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>User interaction callbacks</h3>
+
+<br>
+
+<div class="left">
+<h3>
+<i>// progress callback</i><br>
+void pCall( void *desc , BYTE perc )<br>
+{<br>
+<b>anyType1</b> desc' = ( <b>anyType1</b> ) desc;<br>
+<br>
+<i>// show perc = 0..100 %</i><br>
+...<br>
+}<br>
+<br>
+<i>// stopTest callback</i><br>
+BOOL sCall( void *desc )<br>
+{<br>
+<b>anyType2</b> desc' = ( <b>anyType2</b> ) desc;<br>
+<br>
+<i>// Test? Stop task!</i><br>
+return( TRUE );<br>
+<br>
+<i>// Test ? Continue task!</i><br>
+return( FALSE );<br>
+}
+</h3>
+</div>
+</div></td>
+</tr>
+
+</table>
+
+<br>
+
+<!-- *************************************************************************** -->
+
+<a name="GROSTL"></a>
+<h2><b>Hashing - 512bit: Grostl</b></h2>
+
+<br>
+
+<table border="1">
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Hashing : <i>hash [64] = Grostl ( inBuf [len] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>GROSTL512_DATA</b> grostl;<br>
+BYTE hash [64];<br>
+BYTE *inBuf; // <i>BYTE inBuf [len]</i><br>
+<br>
+<b>Grostl512_init</b>( &amp;grostl );<br>
+<b>Grostl512_data</b>( &amp;grostl , inBuf , <i>len</i> );<br>
+<b>Grostl512_finalize</b>( &amp;grostl , hash );
+</h3>
+</div>
+</div></td>
+</tr>
+
+</table>
+
+<br>
+
+<!-- *************************************************************************** -->
+
+<a name="KECCAK"></a>
+<h2><b>Hashing - 512bit: Keccak</b></h2>
+
+<br>
+
+<table border="1">
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Hashing : <i>hash [64] = Keccak ( inBuf [len] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>KECCAK512_DATA</b> keccak;<br>
+BYTE hash [64];<br>
+BYTE *inBuf; // <i>BYTE inBuf [len]</i><br>
+<br>
+<b>Keccak512_init</b>( &amp;keccak );<br>
+<b>Keccak512_data</b>( &amp;keccak , inBuf , <i>len</i> );<br>
+<b>Keccak512_finalize</b>( &amp;keccak , hash );
+</h3>
+</div>
+</div></td>
+</tr>
+
+</table>
+
+<br>
+
+<!-- *************************************************************************** -->
+
+<a name="SHA2"></a>
+<h2><b>Hashing - 512bit: SHA2</b></h2>
+
+<br>
+
+<table border="1">
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Hashing : <i>hash [64] = SHA2 ( inBuf [len] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>SHA512_DATA</b> sha;<br>
+BYTE hash [64];<br>
+BYTE *inBuf; // <i>BYTE inBuf [len]</i><br>
+<br>
+<b>Sha512_init</b>( &amp;sha );<br>
+<b>Sha512_data</b>( &amp;sha , inBuf , <i>len</i> );<br>
+<b>Sha512_finalize</b>( &amp;sha , hash );
+</h3>
+</div>
+</div></td>
+</tr>
+
+</table>
+
+<br>
+
+<!-- *************************************************************************** -->
+
+<a name="SKEIN"></a>
+<h2><b>Hashing - 512bit: Skein</b></h2>
+
+<br>
+
+<table border="1">
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Hashing : <i>hash [64] = Skein ( inBuf [len] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>SKEIN512_DATA</b> skein;<br>
+BYTE hash [64];<br>
+BYTE *inBuf; // <i>BYTE inBuf [len]</i><br>
+<br>
+<b>Skein512_init</b>( &amp;skein );<br>
+<b>Skein512_data</b>( &amp;skein , inBuf , <i>len</i> );<br>
+<b>Skein512_finalize</b>( &amp;skein , hash );
+</h3>
+</div>
+</div></td>
+</tr>
+
+</table>
+
+<br>
+
+
+
+<!-- *************************************************************************** -->
+
+<a name="AES"></a>
+<h2><b>Cryptography - 256bit - ECB - 128bit block: AES</b></h2>
+
+<br>
+
+<table border="1">
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Encrypt : <i>outBuf [16] = AES <sub><a href="https://en.wikipedia.org/wiki/Cipher_block_chaining#Electronic_codebook_.28ECB.29">ECB</a></sub> ( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>RIJNDAEL_STATIC_DATA</b> rijndael;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;rijndael , 0 , sizeof( RIJNDAEL_STATIC_DATA ) );<br>
+rijndael.nrounds = <b>Rijndael_set_key_encrypt</b>( rijndael.key , passw , 256 );<br>
+<br>
+<b>Rijndael_encrypt</b>( rijndael.key , rijndael.nrounds , inBuf , outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Decrypt : <i>outBuf [16] = AES <sub>ECB</sub> <sup>-1</sup>( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>RIJNDAEL_STATIC_DATA</b> rijndael;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;rijndael , 0 , sizeof( RIJNDAEL_STATIC_DATA ) );<br>
+rijndael.nrounds = <b>Rijndael_set_key_decrypt</b>( rijndael.key , passw , 256 );<br>
+<br>
+<b>Rijndael_decrypt</b>( rijndael.key , rijndael.nrounds , inBuf , outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+</table>
+
+<br>
+
+<!-- *************************************************************************** -->
+
+<a name="ANUBIS"></a>
+<h2><b>Cryptography - 256bit - ECB - 128bit block: Anubis</b></h2>
+
+<br>
+
+<table border="1">
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Encrypt : <i>outBuf [16] = Anubis <sub>ECB</sub> ( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>ANUBIS_STATIC_DATA</b> anubis;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;anubis , 0 , sizeof( ANUBIS_STATIC_DATA ) );<br>
+<b>Anubis_set_key</b>( &amp;anubis.key , passw );<br>
+<br>
+<b>Anubis_encrypt</b>( &amp;anubis.key , inBuf , outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Decrypt : <i>outBuf [16] = Anubis <sub>ECB</sub> <sup>-1</sup>( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>ANUBIS_STATIC_DATA</b> anubis;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;anubis , 0 , sizeof( ANUBIS_STATIC_DATA ) );<br>
+<b>Anubis_set_key</b>( &amp;anubis.key , passw );<br>
+<br>
+<b>Anubis_decrypt</b>( &amp;anubis.key , inBuf , outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+</table>
+
+<br>
+
+<!-- *************************************************************************** -->
+
+<a name="CAMELLIA"></a>
+<h2><b>Cryptography - 256bit - ECB - 128bit block: Camellia</b></h2>
+
+<br>
+
+<table border="1">
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Encrypt : <i>outBuf [16] = Camellia <sub>ECB</sub> ( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>CAMELLIA_STATIC_DATA</b> camellia;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;camellia , 0 , sizeof( CAMELLIA_STATIC_DATA ) );<br>
+<b>Camellia_set_key</b>( camellia.key , 256 , passw );<br>
+<br>
+<b>Camellia_encrypt</b>( camellia.key , 256 , inBuf , outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Decrypt : <i>outBuf [16] = Camellia <sub>ECB</sub> <sup>-1</sup>( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>CAMELLIA_STATIC_DATA</b> camellia;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;camellia , 0 , sizeof( CAMELLIA_STATIC_DATA ) );<br>
+<b>Camellia_set_key</b>( camellia.key , 256 , passw );<br>
+<br>
+<b>Camellia_decrypt</b>( camellia.key , 256 , inBuf , outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+</table>
+
+<br>
+
+<!-- *************************************************************************** -->
+
+<a name="CAST-256"></a>
+<h2><b>Cryptography - 256bit - ECB - 128bit block: Cast-256</b></h2>
+
+<br>
+
+<table border="1">
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Encrypt : <i>outBuf [16] = Cast-256 <sub>ECB</sub> ( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>CAST256_STATIC_DATA</b> cast256;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;cast256 , 0 , sizeof( CAST256_STATIC_DATA ) );<br>
+<b>Cast256_set_key</b>( cast256.key , ( DWORD * ) passw , 256 );<br>
+<br>
+<b>Cast256_encrypt</b>( cast256.key , ( DWORD * ) inBuf , ( DWORD * ) outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Decrypt : <i>outBuf [16] = Cast-256 <sub>ECB</sub> <sup>-1</sup>( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>CAST256_STATIC_DATA</b> cast256;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;cast256 , 0 , sizeof( CAST256_STATIC_DATA ) );<br>
+<b>Cast256_set_key</b>( cast256.key , ( DWORD * ) passw , 256 );<br>
+<br>
+<b>Cast256_decrypt</b>( cast256.key , ( DWORD * ) inBuf , ( DWORD * ) outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+</table>
+
+<br>
+
+<!-- *************************************************************************** -->
+
+<a name="CLEFIA"></a>
+<h2><b>Cryptography - 256bit - ECB - 128bit block: Clefia</b></h2>
+
+<br>
+
+<table border="1">
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Encrypt : <i>outBuf [16] = Clefia <sub>ECB</sub> ( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>CLEFIA_STATIC_DATA</b> clefia;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;clefia , 0 , sizeof( CLEFIA_STATIC_DATA ) );<br>
+<b>Clefia_set_key</b>( &amp;clefia.key , passw , 256 );<br>
+<br>
+<b>Clefia_encrypt</b>( &amp;clefia.key , inBuf , outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Decrypt : <i>outBuf [16] = Clefia <sub>ECB</sub> <sup>-1</sup>( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>CLEFIA_STATIC_DATA</b> clefia;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;clefia , 0 , sizeof( CLEFIA_STATIC_DATA ) );<br>
+<b>Clefia_set_key</b>( &amp;clefia.key , passw , 256 );<br>
+<br>
+<b>Clefia_decrypt</b>( &amp;clefia.key , inBuf , outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+</table>
+
+<br>
+
+<!-- *************************************************************************** -->
+
+<a name="FROG"></a>
+<h2><b>Cryptography - 256bit - ECB - 128bit block: FROG</b></h2>
+
+<br>
+
+<table border="1">
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Encrypt : <i>outBuf [16] = FROG <sub>ECB</sub> ( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>FROG_STATIC_DATA</b> frog;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;frog , 0 , sizeof( FROG_STATIC_DATA ) );<br>
+<b>Frog_set_key</b>( &amp;frog.key , ( DWORD * ) passw , 256 );<br>
+<br>
+<b>Frog_encrypt</b>( &amp;frog.key , ( DWORD * ) inBuf , ( DWORD * ) outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Decrypt : <i>outBuf [16] = FROG <sub>ECB</sub> <sup>-1</sup>( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>FROG_STATIC_DATA</b> frog;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;frog , 0 , sizeof( FROG_STATIC_DATA ) );<br>
+<b>Frog_set_key</b>( &amp;frog.key , ( DWORD * ) passw , 256 );<br>
+<br>
+<b>Frog_decrypt</b>( &amp;frog.key , ( DWORD * ) inBuf , ( DWORD * ) outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+</table>
+
+<br>
+
+<!-- *************************************************************************** -->
+
+<a name="HIEROCRYPT3"></a>
+<h2><b>Cryptography - 256bit - ECB - 128bit block: Hierocrypt3</b></h2>
+
+<br>
+
+<table border="1">
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Encrypt : <i>outBuf [16] = Hierocrypt3 <sub>ECB</sub> ( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>HIEROCRYPT3_STATIC_DATA</b> hierocrypt3;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;hierocrypt3 , 0 , sizeof( HIEROCRYPT3_STATIC_DATA ) );<br>
+<b>Hierocrypt3_set_key</b>( &amp;hierocrypt3.key , passw );<br>
+<br>
+<b>Hierocrypt3_encrypt</b>( &amp;hierocrypt3.key , inBuf , outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Decrypt : <i>outBuf [16] = Hierocrypt3 <sub>ECB</sub> <sup>-1</sup>( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>HIEROCRYPT3_STATIC_DATA</b> hierocrypt3;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;hierocrypt3 , 0 , sizeof( HIEROCRYPT3_STATIC_DATA ) );<br>
+<b>Hierocrypt3_set_key</b>( &amp;hierocrypt3.key , passw );<br>
+<br>
+<b>Hierocrypt3_decrypt</b>( &amp;hierocrypt3.key , inBuf , outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+</table>
+
+<br>
+
+<!-- *************************************************************************** -->
+
+<a name="IDEA-NXT"></a>
+<h2><b>Cryptography - 256bit - ECB - 128bit block: Idea-NXT</b></h2>
+
+<br>
+
+<table border="1">
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Encrypt : <i>outBuf [16] = Idea-NXT <sub>ECB</sub> ( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>IDEANXT128_STATIC_DATA</b> ideanxt;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;ideanxt , 0 , sizeof( IDEANXT128_STATIC_DATA ) );<br>
+<b>Ideanxt128_set_key</b>( &amp;ideanxt.key , passw , 256 );<br>
+<br>
+<b>Ideanxt128_encrypt</b>( &amp;ideanxt.key , inBuf , outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Decrypt : <i>outBuf [16] = Idea-NXT <sub>ECB</sub> <sup>-1</sup>( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>IDEANXT128_STATIC_DATA</b> ideanxt;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;ideanxt , 0 , sizeof( IDEANXT128_STATIC_DATA ) );<br>
+<b>Ideanxt128_set_key</b>( &amp;ideanxt.key , passw , 256 );<br>
+<br>
+<b>Ideanxt128_decrypt</b>( &amp;ideanxt.key , inBuf , outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+</table>
+
+<br>
+
+<!-- *************************************************************************** -->
+
+<a name="MARS"></a>
+<h2><b>Cryptography - 256bit - ECB - 128bit block: MARS</b></h2>
+
+<br>
+
+<table border="1">
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Encrypt : <i>outBuf [16] = MARS <sub>ECB</sub> ( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>MARS_STATIC_DATA</b> mars;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;mars , 0 , sizeof( MARS_STATIC_DATA ) );<br>
+mars.vk[0]=0x09d0c479;<br>
+mars.vk[1]=0x28c8ffe0;<br>
+mars.vk[2]=0x84aa6c39;<br>
+mars.vk[3]=0x9dad7287;<br>
+mars.vk[4]=0x7dff9be3;<br>
+mars.vk[5]=0xd4268361;<br>
+mars.vk[6]=0xc96da1d4;<br>
+<b>Mars_set_key</b>( mars.key , mars.vk , ( DWORD * ) passw , 256 );<br>
+<br>
+<b>Mars_encrypt</b>( mars.key , ( DWORD * ) inBuf , ( DWORD * ) outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Decrypt : <i>outBuf [16] = MARS <sub>ECB</sub> <sup>-1</sup>( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>MARS_STATIC_DATA</b> mars;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;mars , 0 , sizeof( MARS_STATIC_DATA ) );<br>
+mars.vk[0]=0x09d0c479;<br>
+mars.vk[1]=0x28c8ffe0;<br>
+mars.vk[2]=0x84aa6c39;<br>
+mars.vk[3]=0x9dad7287;<br>
+mars.vk[4]=0x7dff9be3;<br>
+mars.vk[5]=0xd4268361;<br>
+mars.vk[6]=0xc96da1d4;<br>
+<b>Mars_set_key</b>( mars.key , mars.vk , ( DWORD * ) passw , 256 );<br>
+<br>
+<b>Mars_decrypt</b>( mars.key , ( DWORD * ) inBuf , ( DWORD * ) outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+</table>
+
+<br>
+
+<!-- *************************************************************************** -->
+
+<a name="RC6"></a>
+<h2><b>Cryptography - 256bit - ECB - 128bit block: RC6</b></h2>
+
+<br>
+
+<table border="1">
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Encrypt : <i>outBuf [16] = RC6 <sub>ECB</sub> ( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>RC6_STATIC_DATA</b> rc6;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;rc6 , 0 , sizeof( RC6_STATIC_DATA ) );<br>
+<b>Rc6_set_key</b>( rc6.key , ( DWORD * ) passw , 256 );<br>
+<br>
+<b>Rc6_encrypt</b>( rc6.key , ( DWORD * ) inBuf , ( DWORD * ) outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Decrypt : <i>outBuf [16] = RC6 <sub>ECB</sub> <sup>-1</sup>( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>RC6_STATIC_DATA</b> rc6;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;rc6 , 0 , sizeof( RC6_STATIC_DATA ) );<br>
+<b>Rc6_set_key</b>( rc6.key , ( DWORD * ) passw , 256 );<br>
+<br>
+<b>Rc6_decrypt</b>( rc6.key , ( DWORD * ) inBuf , ( DWORD * ) outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+</table>
+
+<br>
+
+<!-- *************************************************************************** -->
+
+<a name="SAFER+"></a>
+<h2><b>Cryptography - 256bit - ECB - 128bit block: Safer+</b></h2>
+
+<br>
+
+<table border="1">
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Encrypt : <i>outBuf [16] = Safer+ <sub>ECB</sub> ( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>SAFERP_STATIC_DATA</b> saferp;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;saferp , 0 , sizeof( SAFERP_STATIC_DATA ) );<br>
+<b>Saferp_set_key</b>( &amp;saferp.key , ( DWORD * ) passw , 256 );<br>
+<br>
+<b>Saferp_encrypt</b>( &amp;saferp.key , ( DWORD * ) inBuf , ( DWORD * ) outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Decrypt : <i>outBuf [16] = Safer+ <sub>ECB</sub> <sup>-1</sup>( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>SAFERP_STATIC_DATA</b> saferp;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;saferp , 0 , sizeof( SAFERP_STATIC_DATA ) );<br>
+<b>Saferp_set_key</b>( &amp;saferp.key , ( DWORD * ) passw , 256 );<br>
+<br>
+<b>Saferp_decrypt</b>( &amp;saferp.key , ( DWORD * ) inBuf , ( DWORD * ) outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+</table>
+
+<br>
+
+<!-- *************************************************************************** -->
+
+<a name="SC2000"></a>
+<h2><b>Cryptography - 256bit - ECB - 128bit block: SC2000</b></h2>
+
+<br>
+
+<table border="1">
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Encrypt : <i>outBuf [16] = SC2000 <sub>ECB</sub> ( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>SC2000_STATIC_DATA</b> sc2000;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;sc2000 , 0 , sizeof( SC2000_STATIC_DATA ) );<br>
+<b>Sc2000_set_key</b>( sc2000.key , ( DWORD * ) passw );<br>
+<br>
+<b>Sc2000_encrypt</b>( sc2000.key , ( DWORD * ) inBuf , ( DWORD * ) outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Decrypt : <i>outBuf [16] = SC2000 <sub>ECB</sub> <sup>-1</sup>( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>SC2000_STATIC_DATA</b> sc2000;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;sc2000 , 0 , sizeof( SC2000_STATIC_DATA ) );<br>
+<b>Sc2000_set_key</b>( sc2000.key , ( DWORD * ) passw );<br>
+<br>
+<b>Sc2000_decrypt</b>( sc2000.key , ( DWORD * ) inBuf , ( DWORD * ) outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+</table>
+
+<br>
+
+<!-- *************************************************************************** -->
+
+<a name="SERPENT"></a>
+<h2><b>Cryptography - 256bit - ECB - 128bit block: Serpent</b></h2>
+
+<br>
+
+<table border="1">
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Encrypt : <i>outBuf [16] = Serpent <sub>ECB</sub> ( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>SERPENT_STATIC_DATA</b> serpent;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;serpent , 0 , sizeof( SERPENT_STATIC_DATA ) );<br>
+<b>Serpent_set_key</b>( serpent.key , ( DWORD * ) passw , 256 );<br>
+<br>
+<b>Serpent_encrypt</b>( serpent.key , ( DWORD * ) inBuf , ( DWORD * ) outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Decrypt : <i>outBuf [16] = Serpent <sub>ECB</sub> <sup>-1</sup>( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>SERPENT_STATIC_DATA</b> serpent;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;serpent , 0 , sizeof( SERPENT_STATIC_DATA ) );<br>
+<b>Serpent_set_key</b>( serpent.key , ( DWORD * ) passw , 256 );<br>
+<br>
+<b>Serpent_decrypt</b>( serpent.key , ( DWORD * ) inBuf , ( DWORD * ) outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+</table>
+
+<br>
+
+<!-- *************************************************************************** -->
+
+<a name="SPEED"></a>
+<h2><b>Cryptography - 256bit - ECB - 128bit block: Speed</b></h2>
+
+<br>
+
+<table border="1">
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Encrypt : <i>outBuf [16] = Speed <sub>ECB</sub> ( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>SPEED_STATIC_DATA</b> speed;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;speed , 0 , sizeof( SPEED_STATIC_DATA ) );<br>
+<b>Speed_set_key</b>( speed.key , passw );<br>
+<br>
+<b>Speed_encrypt</b>( speed.key , inBuf , outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Decrypt : <i>outBuf [16] = Speed <sub>ECB</sub> <sup>-1</sup>( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>SPEED_STATIC_DATA</b> speed;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;speed , 0 , sizeof( SPEED_STATIC_DATA ) );<br>
+<b>Speed_set_key</b>( speed.key , passw );<br>
+<br>
+<b>Speed_decrypt</b>( speed.key , inBuf , outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+</table>
+
+<br>
+
+<!-- *************************************************************************** -->
+
+<a name="TWOFISH"></a>
+<h2><b>Cryptography - 256bit - ECB - 128bit block: Twofish</b></h2>
+
+<br>
+
+<table border="1">
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Encrypt : <i>outBuf [16] = Twofish <sub>ECB</sub> ( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>TWOFISH_STATIC_DATA</b> twofish;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;twofish , 0 , sizeof( TWOFISH_STATIC_DATA ) );<br>
+<b>Twofish_set_key</b>( &amp;twofish.key , ( DWORD * ) passw , 256 );<br>
+<br>
+<b>Twofish_encrypt</b>( &amp;twofish.key , ( DWORD * ) inBuf , ( DWORD * ) outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Decrypt : <i>outBuf [16] = Twofish <sub>ECB</sub> <sup>-1</sup>( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>TWOFISH_STATIC_DATA</b> twofish;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;twofish , 0 , sizeof( TWOFISH_STATIC_DATA ) );<br>
+<b>Twofish_set_key</b>( &amp;twofish.key , ( DWORD * ) passw , 256 );<br>
+<br>
+<b>Twofish_decrypt</b>( &amp;twofish.key , ( DWORD * ) inBuf , ( DWORD * ) outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+</table>
+
+<br>
+
+<!-- *************************************************************************** -->
+
+<a name="UNICORN-A"></a>
+<h2><b>Cryptography - 256bit - ECB - 128bit block: Unicorn-A</b></h2>
+
+<br>
+
+<table border="1">
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Encrypt : <i>outBuf [16] = Unicorn-A <sub>ECB</sub> ( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>UNICORNA_STATIC_DATA</b> unicorn;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;unicorn , 0 , sizeof( UNICORNA_STATIC_DATA ) );<br>
+<b>Unicorn_set_key</b>( unicorn.key , passw );<br>
+<br>
+<b>Unicorn_encrypt</b>( unicorn.key , inBuf , outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+<tr>
+<td><div style="margin:10px 10px 10px 10px;">
+<h3>Decrypt : <i>outBuf [16] = Unicorn-A <sub>ECB</sub> <sup>-1</sup>( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>UNICORNA_STATIC_DATA</b> unicorn;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+<br>
+memset( &amp;unicorn , 0 , sizeof( UNICORNA_STATIC_DATA ) );<br>
+<b>Unicorn_set_key</b>( unicorn.key , passw );<br>
+<br>
+<b>Unicorn_decrypt</b>( unicorn.key , inBuf , outBuf );
+</h3>
+</div>
+</div></td>
+</tr>
+
+</table>
+
+<br>
+
+<!-- *************************************************************************** -->
+
+<a name="WRAPPER"></a>
+<h2><b>Cryptography - 256bit - ECB - 128bit block: Wrapper</b></h2>
+
+<br>
+
+<table border="1">
+
+<tr>
+<td valign="top"><div style="margin:10px 10px 10px 10px;">
+<h3>Encrypt : <i>outBuf [16] = Cipher <sub>ECB</sub> ( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>MULTI_STATIC_DATA</b> multi;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+ENUM_ALG cipher; // <i>cipher = ANUBIS_ALG / ...</i><br>
+<br>
+<b>Multi_single_setkey</b>( &amp;multi , cipher , passw );<br>
+<br>
+<b>Multi_ECB_single_encrypt</b>( &amp;multi , cipher , inBuf , outBuf );
+</h3>
+</div>
+
+<br>
+
+<h3>Decrypt : <i>outBuf [16] = Cipher <sub>ECB</sub> <sup>-1</sup>( inBuf [16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>MULTI_STATIC_DATA</b> multi;<br>
+BYTE passw [32];<br>
+BYTE inBuf [16] , outBuf [16];<br>
+ENUM_ALG cipher; // <i>cipher = ANUBIS_ALG / ...</i><br>
+<br>
+<b>Multi_single_setkey</b>( &amp;multi , cipher , passw );<br>
+<br>
+<b>Multi_ECB_single_decrypt</b>( &amp;multi , cipher , inBuf , outBuf );
+</h3>
+</div>
+</div></td>
+<td valign="top"><div style="margin:10px 10px 10px 10px;" class="left">
+<h3>
+typedef enum {<br>
+<b>ANUBIS_ALG</b>=0,<br>
+<b>CAMELLIA_ALG</b>,<br>
+<b>CAST256_ALG</b>,<br>
+<b>CLEFIA_ALG</b>,<br>
+<b>FROG_ALG</b>,<br>
+<b>HIEROCRYPT3_ALG</b>,<br>
+<b>IDEANXT128_ALG</b>,<br>
+<b>MARS_ALG</b>,<br>
+<b>RC6_ALG</b>,<br>
+<b>RIJNDAEL_ALG</b>,<br>
+<b>SAFERP_ALG</b>,<br>
+<b>SC2000_ALG</b>,<br>
+<b>SERPENT_ALG</b>,<br>
+<b>SPEED_ALG</b>,<br>
+<b>TWOFISH_ALG</b>,<br>
+<b>UNICORNA_ALG</b><br>
+} ENUM_ALG;
+</h3>
+</div></td>
+</tr>
+
+</table>
+
+<br>
+
+<!-- *************************************************************************** -->
+
+<a name="MULTI-C"></a>
+<h2><b>Multi-cryptography - 256 + 256bit - CBC - Segment</b></h2>
+
+<br>
+
+<table border="1">
+
+<tr>
+<td valign="top"><div style="margin:10px 10px 10px 10px;">
+<h3>Encrypt : <i>buf ' [k * 16] = Multi-cipher <sub><a href="https://en.wikipedia.org/wiki/Cipher_block_chaining#Cipher-block_chaining_.28CBC.29">CBC</a></sub> ( buf [k * 16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>MULTI_DATA</b> multi;<br>
+BYTE <a href="https://en.wikipedia.org/wiki/Initialization_vector">iv</a> [16 * 16];<br>
+BYTE passw1 [32] , passw2 [32];<br>
+DWORD nonce;<br>
+BYTE *buf; <i>// BYTE buf [len = k * 16]</i><br>
+<br>
+<b>anyType1</b> pDesc; <i>// progress descriptor</i><br>
+<b>anyType2</b> sDesc; <i>// stopTest descriptor</i><br>
+<br>
+<b>Multi_setkey</b>( &amp;multi , iv , passw1 , passw2 , nonce );<br>
+<br>
+<i>// pCall = NULL &amp;&amp; pDesc = NULL &rarr; no progress callback</i><br>
+<i>// sCall = NULL &amp;&amp; sDesc = NULL &rarr; no stopTest callBack</i><br>
+switch( <b>Multi_CBC_encrypt</b>( &amp;multi , <i>len</i> , buf , pCall , pDesc , sCall , sDesc ) )<br>
+{<br>
+case OBFUNC_STOP: <i>// stopped</i><br>
+case OBFUNC_OK: <i>// ok</i><br>
+}
+</h3>
+</div>
+</div></td>
+<td valign="top"><div style="margin:10px 10px 10px 10px;">
+<h3><b>Architecture</b></h3><br>
+<img src="images\multi_cr1_little.jpg" alt="multi_cr1_little.jpg"><br>
+<h3><a href="images\multi_cr1.jpg">Enlarge</a></h3>
+</div></td></tr>
+
+<tr>
+<td valign="top"><div style="margin:10px 10px 10px 10px;">
+<h3>Decrypt : <i>buf [k * 16] = Multi-cipher <sub>CBC</sub> <sup>-1</sup>( buf ' [k * 16] )</i></h3>
+
+<br>
+
+<div class="left">
+<h3>
+<b>MULTI_DATA</b> multi;<br>
+BYTE iv [16 * 16];<br>
+BYTE passw1 [32] , passw2 [32];<br>
+DWORD nonce;<br>
+BYTE *buf; <i>// BYTE buf [len = k * 16]</i><br>
+<br>
+<b>anyType1</b> pDesc; <i>// progress descriptor</i><br>
+<b>anyType2</b> sDesc; <i>// stopTest descriptor</i><br>
+<br>
+<b>Multi_setkey</b>( &amp;multi , iv , passw1 , passw2 , nonce );<br>
+<br>
+<i>// pCall = NULL &amp;&amp; pDesc = NULL &rarr; no progress callback</i><br>
+<i>// sCall = NULL &amp;&amp; sDesc = NULL &rarr; no stopTest callBack</i><br>
+switch( <b>Multi_CBC_decrypt</b>( &amp;multi , <i>len</i> , buf , pCall , pDesc , sCall , sDesc ) )<br>
+{<br>
+case OBFUNC_STOP: <i>// stopped</i><br>
+case OBFUNC_OK: <i>// ok</i><br>
+}
+</h3>
+</div>
+</div></td>
+<td valign="top"><div style="margin:10px 10px 10px 10px;">
+<h3><b>Cipher selection</b></h3><br>
+<img src="images\multi_cr2_little.jpg" alt="multi_cr2_little.jpg"><br>
+<h3><a href="images\multi_cr2.jpg">Enlarge</a></h3>
+</div></td></tr>
+
+<tr>
+<td valign="top"><div style="margin:10px 10px 10px 10px;">
+<h3>User interaction callbacks</h3>
+
+<br>
+
+<div class="left">
+<h3>
+<i>// progress callback</i><br>
+void pCall( void *desc , BYTE perc )<br>
+{<br>
+<b>anyType1</b> desc' = ( <b>anyType1</b> ) desc;<br>
+<br>
+<i>// show perc = 0..100 %</i><br>
+...<br>
+}<br>
+<br>
+<i>// stopTest callback</i><br>
+BOOL sCall( void *desc )<br>
+{<br>
+<b>anyType2</b> desc' = ( <b>anyType2</b> ) desc;<br>
+<br>
+<i>// Test? Stop task!</i><br>
+return( TRUE );<br>
+<br>
+<i>// Test ? Continue task!</i><br>
+return( FALSE );<br>
+}
+</h3>
+</div>
+</div></td>
+<td valign="top"><div style="margin:10px 10px 10px 10px;">
+<h3><b>Example</b></h3><br>
+<img src="images\multi_cr3_little.jpg" alt="multi_cr3_little.jpg"><br>
+<h3><a href="images\multi_cr3.jpg">Enlarge</a></h3>
+</div></td></tr>
+
+</table>
+
+<br>
+
+</div>
+<!-- *** text-margin END -->
+
+</div>
+<!-- *** centerbar END -->
+
+<!-- ** footer BEGIN ** -->
+<div id="footer" align="center">
+
+&nbsp;<br>
+
+<script type="text/javascript" src="styles\footer.js"></script>
+
+</div>
+<!-- ** footer END -->
+
+</div>
+<!-- ** general END ** -->
+
+</div>
+<!-- * main END -->
+
+</body>
+</html>

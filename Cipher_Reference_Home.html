@@ -1,0 +1,1036 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Cryptography - 256 bit ciphers</title>
+<meta name="description" content="Cryptography - 256 bit ciphers. Hashing - 512 bit functions. Reference source code and submissions to international cryptographic designs contests.">
+<meta name="keywords" content="libObfuscate, obfuscation, 256 bit cryptography, 512 bit hashing functions, reference source code, submission, open source, deniable, aes, anubis, camellia, cast256, clefia, frog, hierocrypt3, idea-nxt, mars, rc6, safer+, sc2000, serpent, speed, twofish, unicorn-a, grostl, keccak, sha2, skein">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link type="text/css" rel="stylesheet" href="styles\style.css">
+<link type="text/css" rel="stylesheet" href="styles\menu.css">
+
+</head>
+
+<body>
+
+<!-- * main BEGIN -->
+<div id="main">
+
+<!-- **** contact BEGIN -->
+<div id="contact">
+
+<script type="text/javascript" src="styles\contact.js"></script>
+
+</div>
+<!-- **** contact END -->
+
+<!-- ** general BEGIN -->
+<div id="general">
+
+<!-- ** header-cont BEGIN -->
+<div id="header_cont">
+
+<div id="cssmenu">
+<script type="text/javascript" src="styles\menu.js"></script>
+</div>
+
+<div id="header-title">
+<script type="text/javascript" src="styles\submenu.js"></script>
+</div>
+
+</div>
+<!-- ** header-cont END -->
+
+<!-- *** centerbar BEGIN -->
+<div id="centerbar">
+
+<!-- *** text-margin BEGIN -->
+<div id="text_margin" align="center">
+
+<h3 align="left" style="font-variant:small-caps;"><a href="index.htm"><b>Home</b></a> > <b>Software</b> > <b>Cipher Reference</b></h3>
+
+<br>
+
+<h1>Cryptography - 256 bit Ciphers</h1>
+
+<br>
+
+<h2>Reference source code and submissions to international cryptographic designs contests</h2>
+
+<br>
+
+<table border="1">
+
+<tr>
+<td class="grey-white"><h3>&nbsp;Cipher&nbsp;<br>&nbsp;256bit key - 128bit block&nbsp;</h3></td>
+<td class="grey-white"><h3>&nbsp;<a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard_process">AES Process</a>&nbsp;<br>&nbsp;(1997-2000)&nbsp;</h3></td>
+<td class="grey-white"><h3>&nbsp;<a href="https://en.wikipedia.org/wiki/NESSIE">NESSIE Process</a>&nbsp;<br>&nbsp;(2000-2003)&nbsp;</h3></td>
+<td class="grey-white"><h3>&nbsp;<a href="https://en.wikipedia.org/wiki/CRYPTREC">CRYPTREC Process</a>&nbsp;<br>&nbsp;(2000-2003)&nbsp;</h3></td>
+</tr>
+
+<tr>
+<td class="green-white"><h3>&nbsp;<a href="#AES">AES</a>&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+</tr>
+
+<tr>
+<td class="green-white"><h3>&nbsp;<a href="#ANUBIS">Anubis</a>&nbsp;</h3></td>
+<td><h3>&nbsp;-&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+<td><h3>&nbsp;-&nbsp;</h3></td>
+</tr>
+
+<tr>
+<td class="green-white"><h3>&nbsp;<a href="#CAMELLIA">Camellia</a>&nbsp;</h3></td>
+<td><h3>&nbsp;-&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+</tr>
+
+<tr>
+<td class="green-white"><h3>&nbsp;<a href="#CAST-256">Cast-256</a>&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+<td><h3>&nbsp;-&nbsp;</h3></td>
+</tr>
+
+<tr>
+<td class="green-white"><h3>&nbsp;<a href="#CLEFIA">Clefia</a>&nbsp;</h3></td>
+<td><h3>&nbsp;-&nbsp;</h3></td>
+<td><h3>&nbsp;-&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+</tr>
+
+<tr>
+<td class="green-white"><h3>&nbsp;<a href="#FROG">FROG</a>&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+<td><h3>&nbsp;-&nbsp;</h3></td>
+<td><h3>&nbsp;-&nbsp;</h3></td>
+</tr>
+
+<tr>
+<td class="green-white"><h3>&nbsp;<a href="#HIEROCRYPT3">Hierocrypt3</a>&nbsp;</h3></td>
+<td><h3>&nbsp;-&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+</tr>
+
+<tr>
+<td class="green-white"><h3>&nbsp;<a href="#IDEA-NXT">Idea-NXT</a>&nbsp;</h3></td>
+<td><h3>&nbsp;-&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+<td><h3>&nbsp;-&nbsp;</h3></td>
+</tr>
+
+<tr>
+<td class="green-white"><h3>&nbsp;<a href="#MARS">MARS</a>&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+<td><h3>&nbsp;-&nbsp;</h3></td>
+<td><h3>&nbsp;-&nbsp;</h3></td>
+</tr>
+
+<tr>
+<td class="green-white"><h3>&nbsp;<a href="#RC6">RC6</a>&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+</tr>
+
+<tr>
+<td class="green-white"><h3>&nbsp;<a href="#SAFER+">Safer+</a>&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+<td><h3>&nbsp;-&nbsp;</h3></td>
+</tr>
+
+<tr>
+<td class="green-white"><h3>&nbsp;<a href="#SC2000">SC2000</a>&nbsp;</h3></td>
+<td><h3>&nbsp;-&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+</tr>
+
+<tr>
+<td class="green-white"><h3>&nbsp;<a href="#SERPENT">Serpent</a>&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+<td><h3>&nbsp;-&nbsp;</h3></td>
+</tr>
+
+<tr>
+<td class="green-white"><h3>&nbsp;<a href="#SPEED">Speed</a>&nbsp;</h3></td>
+<td><h3>&nbsp;-&nbsp;</h3></td>
+<td><h3>&nbsp;-&nbsp;</h3></td>
+<td><h3>&nbsp;-&nbsp;</h3></td>
+</tr>
+
+<tr>
+<td class="green-white"><h3>&nbsp;<a href="#TWOFISH">Twofish</a>&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+<td><h3>&nbsp;-&nbsp;</h3></td>
+</tr>
+
+<tr>
+<td class="green-white"><h3>&nbsp;<a href="#UNICORN-A">Unicorn-A</a>&nbsp;</h3></td>
+<td><h3>&nbsp;-&nbsp;</h3></td>
+<td><h3>&nbsp;-&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+</tr>
+
+</table>
+
+<br>
+
+<h1>Hashing - 512 bit functions</h1>
+
+<br>
+
+<h2>Reference source code and submissions to international hashing designs contests</h2>
+
+<br>
+
+<table border="1">
+
+<tr>
+<td class="grey-white"><h3>&nbsp;Function&nbsp;<br>&nbsp;512bit digest&nbsp;</h3></td>
+<td class="grey-white"><h3>&nbsp;<a href="https://en.wikipedia.org/wiki/SHA2">SHA2</a>&nbsp;</h3></td>
+<td class="grey-white"><h3>&nbsp;<a href="https://en.wikipedia.org/wiki/SHA3">SHA3 Process</a>&nbsp;</h3></td>
+</tr>
+
+<tr>
+<td class="green-white"><h3>&nbsp;<a href="#SHA2">SHA2</a>&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+<td><h3>&nbsp;-&nbsp;</h3></td>
+</tr>
+
+<tr>
+<td class="green-white"><h3>&nbsp;<a href="#GROSTL">Grostl</a>&nbsp;</h3></td>
+<td><h3>&nbsp;-&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+</tr>
+
+<tr>
+<td class="green-white"><h3>&nbsp;<a href="#KECCAK">Keccak</a>&nbsp;</h3></td>
+<td><h3>&nbsp;-&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+</tr>
+
+<tr>
+<td class="green-white"><h3>&nbsp;<a href="#SKEIN">Skein</a>&nbsp;</h3></td>
+<td><h3>&nbsp;-&nbsp;</h3></td>
+<td><h3>&nbsp;&radic;&nbsp;</h3></td>
+</tr>
+
+</table>
+
+<br>
+
+<a name="AES"></a>
+<h2><b>256bit key - 128bit block - AES</b></h2>
+
+<br>
+
+<table border="1"><tr>
+
+<td><div class="left">
+<h3><i>&nbsp;[Rijndael.h]&nbsp;<br>
+<br>
+&nbsp;#ifndef RIJNDAEL_H&nbsp;<br>
+&nbsp;#define RIJNDAEL_H&nbsp;<br>
+<br>
+&nbsp;// ** Thread-safe implementation&nbsp;<br>
+&nbsp;// ** 128bit block size&nbsp;<br>
+&nbsp;// ** 256bit key&nbsp;<br>
+<br>
+&nbsp;extern int Rijndael_set_key_encrypt(...);&nbsp;<br>
+&nbsp;extern int Rijndael_set_key_decrypt(...);&nbsp;<br>
+&nbsp;extern void Rijndael_encrypt(...);&nbsp;<br>
+&nbsp;extern void Rijndael_decrypt(...);&nbsp;<br>
+<br>
+&nbsp;#endif&nbsp;</i></h3>
+</div></td>
+
+<td><div class="left">
+<h3>&nbsp;Author: Vincent Rijmen, Joan Daemen&nbsp;<br>
+&nbsp;Date: 1998&nbsp;<br>
+<br>
+&nbsp;Full Source: <a href="./zip/libObfuscate.zip"><img src="images\zip.jpg" alt="zip.jpg"> libObfuscateSrc/Derived_crypt_code/Rijndael.*</a>&nbsp;<br>
+<br>
+&nbsp;Original Source: <a href="zip\Rijndael_Original.zip"><img src="images\zip.jpg" alt="zip.jpg"> Download</a>&nbsp;<br>
+<br>
+&nbsp;Wikipedia: <a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard">AES</a>
+- <a href="https://en.wikipedia.org/wiki/AES_implementations">AES implementation</a>&nbsp;</h3>
+</div></td>
+
+</tr></table>
+
+<br>
+
+<a name="ANUBIS"></a>
+<h2><b>256bit key - 128bit block - Anubis</b></h2>
+
+<br>
+
+<table border="1"><tr>
+
+<td><div class="left">
+<h3><i>&nbsp;[Anubis.h]&nbsp;<br>
+<br>
+&nbsp;#ifndef ANUBIS_H&nbsp;<br>
+&nbsp;#define ANUBIS_H&nbsp;<br>
+<br>
+&nbsp;// ** Thread-safe implementation&nbsp;<br>
+&nbsp;// ** 128bit block size&nbsp;<br>
+&nbsp;// ** 256bit key&nbsp;<br>
+<br>
+&nbsp;extern void Anubis_set_key(...);&nbsp;<br>
+&nbsp;extern void Anubis_encrypt(...);&nbsp;<br>
+&nbsp;extern void Anubis_decrypt(...);&nbsp;<br>
+<br>
+&nbsp;#endif&nbsp;</i></h3>
+</div></td>
+
+<td><div class="left">
+<h3>&nbsp;Author: Vincent Rijmen and Paulo S. L. M. Barreto&nbsp;<br>
+&nbsp;Date: 2000&nbsp;<br>
+<br>
+&nbsp;Full Source: <a href="./zip/libObfuscate.zip"><img src="images\zip.jpg" alt="zip.jpg"> libObfuscateSrc/Derived_crypt_code/Anubis.*</a>&nbsp;<br>
+<br>
+&nbsp;Original Source: <a href="zip\Anubis_Original.zip"><img src="images\zip.jpg" alt="zip.jpg"> Download</a>&nbsp;<br>
+<br>
+&nbsp;Wikipedia: <a href="https://en.wikipedia.org/wiki/Anubis_(cipher)">Anubis</a>&nbsp;</h3>
+</div></td>
+
+</tr></table>
+
+<br>
+
+<a name="CAMELLIA"></a>
+<h2><b>256bit key - 128bit block - Camellia</b></h2>
+
+<br>
+
+<table border="1"><tr>
+
+<td><div class="left">
+<h3><i>&nbsp;[Camellia.h]&nbsp;<br>
+<br>
+&nbsp;#ifndef CAMELLIA_H&nbsp;<br>
+&nbsp;#define CAMELLIA_H&nbsp;<br>
+<br>
+&nbsp;// ** Thread-safe implementation&nbsp;<br>
+&nbsp;// ** 128bit block size&nbsp;<br>
+&nbsp;// ** 256bit key&nbsp;<br>
+<br>
+&nbsp;extern void Camellia_set_key(...);&nbsp;<br>
+&nbsp;extern void Camellia_encrypt(...);&nbsp;<br>
+&nbsp;extern void Camellia_decrypt(...);&nbsp;<br>
+<br>
+&nbsp;#endif&nbsp;</i></h3>
+</div></td>
+
+<td><div class="left">
+<h3>&nbsp;Author: Mitsubishi, NTT&nbsp;<br>
+&nbsp;Date: 2001&nbsp;<br>
+<br>
+&nbsp;Full Source: <a href="./zip/libObfuscate.zip"><img src="images\zip.jpg" alt="zip.jpg"> libObfuscateSrc/Derived_crypt_code/Camellia.*</a>&nbsp;<br>
+<br>
+&nbsp;Original Source: <a href="zip\Camellia_Original.zip"><img src="images\zip.jpg" alt="zip.jpg"> Download</a>&nbsp;<br>
+<br>
+&nbsp;Wikipedia: <a href="https://en.wikipedia.org/wiki/Camellia_(cipher)">Camellia</a>&nbsp;</h3>
+</div></td>
+
+</tr></table>
+
+<br>
+
+<a name="CAST-256"></a>
+<h2><b>256bit key - 128bit block - Cast-256</b></h2>
+
+<br>
+
+<table border="1"><tr>
+
+<td><div class="left">
+<h3><i>&nbsp;[Cast256.h]&nbsp;<br>
+<br>
+&nbsp;#ifndef CAST256_H&nbsp;<br>
+&nbsp;#define CAST256_H&nbsp;<br>
+<br>
+&nbsp;// ** Thread-safe implementation&nbsp;<br>
+&nbsp;// ** 128bit block size&nbsp;<br>
+&nbsp;// ** 256bit key&nbsp;<br>
+<br>
+&nbsp;extern void Cast256_set_key(...);&nbsp;<br>
+&nbsp;extern void Cast256_encrypt(...);&nbsp;<br>
+&nbsp;extern void Cast256_decrypt(...);&nbsp;<br>
+<br>
+&nbsp;#endif&nbsp;</i></h3>
+</div></td>
+
+<td><div class="left">
+<h3>&nbsp;Author: Carlisle Adams, Stafford Tavares, Howard Heys, Michael Wiener&nbsp;<br>
+&nbsp;Date: 1999&nbsp;<br>
+<br>
+&nbsp;Full Source: <a href="./zip/libObfuscate.zip"><img src="images\zip.jpg" alt="zip.jpg"> libObfuscateSrc/Derived_crypt_code/Cast256.*</a>&nbsp;<br>
+<br>
+&nbsp;Original Source: <a href="zip\Cast256_Original.zip"><img src="images\zip.jpg" alt="zip.jpg"> Download</a>&nbsp;<br>
+<br>
+&nbsp;Wikipedia: <a href="https://en.wikipedia.org/wiki/CAST-256">Cast-256</a>&nbsp;</h3>
+</div></td>
+
+</tr></table>
+
+<br>
+
+<a name="CLEFIA"></a>
+<h2><b>256bit key - 128bit block - Clefia</b></h2>
+
+<br>
+
+<table border="1"><tr>
+
+<td><div class="left">
+<h3><i>&nbsp;[Clefia.h]&nbsp;<br>
+<br>
+&nbsp;#ifndef CLEFIA_H&nbsp;<br>
+&nbsp;#define CLEFIA_H&nbsp;<br>
+<br>
+&nbsp;// ** Thread-safe implementation&nbsp;<br>
+&nbsp;// ** 128bit block size&nbsp;<br>
+&nbsp;// ** 256bit key&nbsp;<br>
+<br>
+&nbsp;extern void Clefia_set_key(...);&nbsp;<br>
+&nbsp;extern void Clefia_encrypt(...);&nbsp;<br>
+&nbsp;extern void Clefia_decrypt(...);&nbsp;<br>
+<br>
+&nbsp;#endif&nbsp;</i></h3>
+</div></td>
+
+<td><div class="left">
+<h3>&nbsp;Author: Sony&nbsp;<br>
+&nbsp;Date: 2007&nbsp;<br>
+<br>
+&nbsp;Full Source: <a href="./zip/libObfuscate.zip"><img src="images\zip.jpg" alt="zip.jpg"> libObfuscateSrc/Derived_crypt_code/Clefia.*</a>&nbsp;<br>
+<br>
+&nbsp;Original Source: <a href="zip\Clefia_Original.zip"><img src="images\zip.jpg" alt="zip.jpg"> Download</a>&nbsp;<br>
+<br>
+&nbsp;Wikipedia: <a href="https://en.wikipedia.org/wiki/CLEFIA">Clefia</a>&nbsp;</h3>
+</div></td>
+
+</tr></table>
+
+<br>
+
+<a name="FROG"></a>
+<h2><b>256bit key - 128bit block - FROG</b></h2>
+
+<br>
+
+<table border="1"><tr>
+
+<td><div class="left">
+<h3><i>&nbsp;[Frog.h]&nbsp;<br>
+<br>
+&nbsp;#ifndef FROG_H&nbsp;<br>
+&nbsp;#define FROG_H&nbsp;<br>
+<br>
+&nbsp;// ** Thread-safe implementation&nbsp;<br>
+&nbsp;// ** 128bit block size&nbsp;<br>
+&nbsp;// ** 256bit key&nbsp;<br>
+<br>
+&nbsp;extern void Frog_set_key(...);&nbsp;<br>
+&nbsp;extern void Frog_encrypt(...);&nbsp;<br>
+&nbsp;extern void Frog_decrypt(...);&nbsp;<br>
+<br>
+&nbsp;#endif&nbsp;</i></h3>
+</div></td>
+
+<td><div class="left">
+<h3>&nbsp;Author: Dianelos Georgoudis, Damian Leroux, and Billy Simon Chaves&nbsp;<br>
+&nbsp;Date: 1999&nbsp;<br>
+<br>
+&nbsp;Full Source: <a href="./zip/libObfuscate.zip"><img src="images\zip.jpg" alt="zip.jpg"> libObfuscateSrc/Derived_crypt_code/Frog.*</a>&nbsp;<br>
+<br>
+&nbsp;Original Source: <a href="zip\Frog_Original.zip"><img src="images\zip.jpg" alt="zip.jpg"> Download</a>&nbsp;<br>
+<br>
+&nbsp;Wikipedia: <a href="https://en.wikipedia.org/wiki/FROG">FROG</a>&nbsp;</h3>
+</div></td>
+
+</tr></table>
+
+<br>
+
+<a name="HIEROCRYPT3"></a>
+<h2><b>256bit key - 128bit block - Hierocrypt3</b></h2>
+
+<br>
+
+<table border="1"><tr>
+
+<td><div class="left">
+<h3><i>&nbsp;[Hierocrypt3.h]&nbsp;<br>
+<br>
+&nbsp;#ifndef HIEROCRYPT3_H&nbsp;<br>
+&nbsp;#define HIEROCRYPT3_H&nbsp;<br>
+<br>
+&nbsp;// ** Thread-safe implementation&nbsp;<br>
+&nbsp;// ** 128bit block size&nbsp;<br>
+&nbsp;// ** 256bit key&nbsp;<br>
+<br>
+&nbsp;extern void Hierocrypt3_set_key(...);&nbsp;<br>
+&nbsp;extern void Hierocrypt3_encrypt(...);&nbsp;<br>
+&nbsp;extern void Hierocrypt3_decrypt(...);&nbsp;<br>
+<br>
+&nbsp;#endif&nbsp;</i></h3>
+</div></td>
+
+<td><div class="left">
+<h3>&nbsp;Author: Toshiba&nbsp;<br>
+&nbsp;Date: 2000&nbsp;<br>
+<br>
+&nbsp;Full Source: <a href="./zip/libObfuscate.zip"><img src="images\zip.jpg" alt="zip.jpg"> libObfuscateSrc/Derived_crypt_code/Hierocrypt3.*</a>&nbsp;<br>
+<br>
+&nbsp;Original Source: <a href="zip\HieroCrypt3_Original.zip"><img src="images\zip.jpg" alt="zip.jpg"> Download</a>&nbsp;<br>
+<br>
+&nbsp;Wikipedia: <a href="https://en.wikipedia.org/wiki/Hierocrypt">Hierocrypt3</a>&nbsp;</h3>
+</div></td>
+
+</tr></table>
+
+<br>
+
+<a name="IDEA-NXT"></a>
+<h2><b>256bit key - 128bit block - Idea-NXT</b></h2>
+
+<br>
+
+<table border="1"><tr>
+
+<td><div class="left">
+<h3><i>&nbsp;[Idea_nxt128.h]&nbsp;<br>
+<br>
+&nbsp;#ifndef IDEANXT128_H&nbsp;<br>
+&nbsp;#define IDEANXT128_H&nbsp;<br>
+<br>
+&nbsp;// ** Thread-safe implementation&nbsp;<br>
+&nbsp;// ** 128bit block size&nbsp;<br>
+&nbsp;// ** 256bit key&nbsp;<br>
+<br>
+&nbsp;extern void Ideanxt128_set_key(...);&nbsp;<br>
+&nbsp;extern void Ideanxt128_encrypt(...);&nbsp;<br>
+&nbsp;extern void Ideanxt128_decrypt(...);&nbsp;<br>
+<br>
+&nbsp;#endif&nbsp;</i></h3>
+</div></td>
+
+<td><div class="left">
+<h3>&nbsp;Author: Pascal Junod, Serge Vaudenay&nbsp;<br>
+&nbsp;Date: 2003&nbsp;<br>
+<br>
+&nbsp;Full Source: <a href="./zip/libObfuscate.zip"><img src="images\zip.jpg" alt="zip.jpg"> libObfuscateSrc/Derived_crypt_code/Idea_nxt128.*</a>&nbsp;<br>
+<br>
+&nbsp;Original Source: <a href="zip\IdeaNxt_Original.zip"><img src="images\zip.jpg" alt="zip.jpg"> Download</a>&nbsp;<br>
+<br>
+&nbsp;Wikipedia: <a href="https://en.wikipedia.org/wiki/Idea_NXT">Idea-NXT</a>&nbsp;</h3>
+</div></td>
+
+</tr></table>
+
+<br>
+
+<a name="MARS"></a>
+<h2><b>256bit key - 128bit block - MARS</b></h2>
+
+<br>
+
+<table border="1"><tr>
+
+<td><div class="left">
+<h3><i>&nbsp;[Mars.h]&nbsp;<br>
+<br>
+&nbsp;#ifndef MARS_H&nbsp;<br>
+&nbsp;#define MARS_H&nbsp;<br>
+<br>
+&nbsp;// ** Thread-safe implementation&nbsp;<br>
+&nbsp;// ** 128bit block size&nbsp;<br>
+&nbsp;// ** 256bit key&nbsp;<br>
+<br>
+&nbsp;extern void Mars_set_key(...);&nbsp;<br>
+&nbsp;extern void Mars_encrypt(...);&nbsp;<br>
+&nbsp;extern void Mars_decrypt(...);&nbsp;<br>
+<br>
+&nbsp;#endif&nbsp;</i></h3>
+</div></td>
+
+<td><div class="left">
+<h3>&nbsp;Author: IBM&nbsp;<br>
+&nbsp;Date: 1998&nbsp;<br>
+<br>
+&nbsp;Full Source: <a href="./zip/libObfuscate.zip"><img src="images\zip.jpg" alt="zip.jpg"> libObfuscateSrc/Derived_crypt_code/Mars.*</a>&nbsp;<br>
+<br>
+&nbsp;Original Source: <a href="zip\Mars_Original.zip"><img src="images\zip.jpg" alt="zip.jpg"> Download</a>&nbsp;<br>
+<br>
+&nbsp;Wikipedia: <a href="https://en.wikipedia.org/wiki/MARS_(cryptography)">MARS</a>&nbsp;</h3>
+</div></td>
+
+</tr></table>
+
+<br>
+
+<a name="RC6"></a>
+<h2><b>256bit key - 128bit block - RC6</b></h2>
+
+<br>
+
+<table border="1"><tr>
+
+<td><div class="left">
+<h3><i>&nbsp;[Rc6.h]&nbsp;<br>
+<br>
+&nbsp;#ifndef RC6_H&nbsp;<br>
+&nbsp;#define RC6_H&nbsp;<br>
+<br>
+&nbsp;// ** Thread-safe implementation&nbsp;<br>
+&nbsp;// ** 128bit block size&nbsp;<br>
+&nbsp;// ** 256bit key&nbsp;<br>
+<br>
+&nbsp;extern void Rc6_set_key(...);&nbsp;<br>
+&nbsp;extern void Rc6_encrypt(...);&nbsp;<br>
+&nbsp;extern void Rc6_decrypt(...);&nbsp;<br>
+<br>
+&nbsp;#endif&nbsp;</i></h3>
+</div></td>
+
+<td><div class="left">
+<h3>&nbsp;Author: Ron Rivest, Matt Robshaw, Ray Sidney, Yiqun Lisa Yin&nbsp;<br>
+&nbsp;Date: 1998&nbsp;<br>
+<br>
+&nbsp;Full Source: <a href="./zip/libObfuscate.zip"><img src="images\zip.jpg" alt="zip.jpg"> libObfuscateSrc/Derived_crypt_code/Rc6.*</a>&nbsp;<br>
+<br>
+&nbsp;Original Source: <a href="zip\Rc6_Original.zip"><img src="images\zip.jpg" alt="zip.jpg"> Download</a>&nbsp;<br>
+<br>
+&nbsp;Wikipedia: <a href="https://en.wikipedia.org/wiki/RC6">RC6</a>&nbsp;</h3>
+</div></td>
+
+</tr></table>
+
+<br>
+
+<a name="SAFER+"></a>
+<h2><b>256bit key - 128bit block - Safer+</b></h2>
+
+<br>
+
+<table border="1"><tr>
+
+<td><div class="left">
+<h3><i>&nbsp;[Saferp.h]&nbsp;<br>
+<br>
+&nbsp;#ifndef SAFERP_H&nbsp;<br>
+&nbsp;#define SAFERP_H&nbsp;<br>
+<br>
+&nbsp;// ** Thread-safe implementation&nbsp;<br>
+&nbsp;// ** 128bit block size&nbsp;<br>
+&nbsp;// ** 256bit key&nbsp;<br>
+<br>
+&nbsp;extern void Saferp_set_key(...);&nbsp;<br>
+&nbsp;extern void Saferp_encrypt(...);&nbsp;<br>
+&nbsp;extern void Saferp_decrypt(...);&nbsp;<br>
+<br>
+&nbsp;#endif&nbsp;</i></h3>
+</div></td>
+
+<td><div class="left">
+<h3>&nbsp;Author: James Massey&nbsp;<br>
+&nbsp;Date: 1998&nbsp;<br>
+<br>
+&nbsp;Full Source: <a href="./zip/libObfuscate.zip"><img src="images\zip.jpg" alt="zip.jpg"> libObfuscateSrc/Derived_crypt_code/Saferp.*</a>&nbsp;<br>
+<br>
+&nbsp;Original Source: <a href="zip\Safer%20_Original.zip"><img src="images\zip.jpg" alt="zip.jpg"> Download</a>&nbsp;<br>
+<br>
+&nbsp;Wikipedia: <a href="https://en.wikipedia.org/wiki/SAFER">Safer+</a>&nbsp;</h3>
+</div></td>
+
+</tr></table>
+
+<br>
+
+<a name="SC2000"></a>
+<h2><b>256bit key - 128bit block - SC2000</b></h2>
+
+<br>
+
+<table border="1"><tr>
+
+<td><div class="left">
+<h3><i>&nbsp;[Sc2000.h]&nbsp;<br>
+<br>
+&nbsp;#ifndef SC2000_H&nbsp;<br>
+&nbsp;#define SC2000_H&nbsp;<br>
+<br>
+&nbsp;// ** Thread-safe implementation&nbsp;<br>
+&nbsp;// ** 128bit block size&nbsp;<br>
+&nbsp;// ** 256bit key&nbsp;<br>
+<br>
+&nbsp;extern void Sc2000_set_key(...);&nbsp;<br>
+&nbsp;extern void Sc2000_encrypt(...);&nbsp;<br>
+&nbsp;extern void Sc2000_decrypt(...);&nbsp;<br>
+<br>
+&nbsp;#endif&nbsp;</i></h3>
+</div></td>
+
+<td><div class="left">
+<h3>&nbsp;Author: Fujitsu&nbsp;<br>
+&nbsp;Date: 2000&nbsp;<br>
+<br>
+&nbsp;Full Source: <a href="./zip/libObfuscate.zip"><img src="images\zip.jpg" alt="zip.jpg"> libObfuscateSrc/Derived_crypt_code/Sc2000.*</a>&nbsp;<br>
+<br>
+&nbsp;Original Source: <a href="zip\Sc2000_Original.zip"><img src="images\zip.jpg" alt="zip.jpg"> Download</a>&nbsp;<br>
+<br>
+&nbsp;Wikipedia: <a href="https://en.wikipedia.org/wiki/SC2000">SC2000</a>&nbsp;</h3>
+</div></td>
+
+</tr></table>
+
+<br>
+
+<a name="SERPENT"></a>
+<h2><b>256bit key - 128bit block - Serpent</b></h2>
+
+<br>
+
+<table border="1"><tr>
+
+<td><div class="left">
+<h3><i>&nbsp;[Serpent.h]&nbsp;<br>
+<br>
+&nbsp;#ifndef SERPENT_H&nbsp;<br>
+&nbsp;#define SERPENT_H&nbsp;<br>
+<br>
+&nbsp;// ** Thread-safe implementation&nbsp;<br>
+&nbsp;// ** 128bit block size&nbsp;<br>
+&nbsp;// ** 256bit key&nbsp;<br>
+<br>
+&nbsp;extern void Serpent_set_key(...);&nbsp;<br>
+&nbsp;extern void Serpent_encrypt(...);&nbsp;<br>
+&nbsp;extern void Serpent_decrypt(...);&nbsp;<br>
+<br>
+&nbsp;#endif&nbsp;</i></h3>
+</div></td>
+
+<td><div class="left">
+<h3>&nbsp;Author: Ross Anderson, Eli Biham, Lars Knudsen&nbsp;<br>
+&nbsp;Date: 1998&nbsp;<br>
+<br>
+&nbsp;Full Source: <a href="./zip/libObfuscate.zip"><img src="images\zip.jpg" alt="zip.jpg"> libObfuscateSrc/Derived_crypt_code/Serpent.*</a>&nbsp;<br>
+<br>
+&nbsp;Original Source: <a href="zip\Serpent_Original.zip"><img src="images\zip.jpg" alt="zip.jpg"> Download</a>&nbsp;<br>
+<br>
+&nbsp;Wikipedia: <a href="https://en.wikipedia.org/wiki/Serpent_(cipher)">Serpent</a>&nbsp;</h3>
+</div></td>
+
+</tr></table>
+
+<br>
+
+<a name="SPEED"></a>
+<h2><b>256bit key - 128bit block - Speed</b></h2>
+
+<br>
+
+<table border="1"><tr>
+
+<td><div class="left">
+<h3><i>&nbsp;[Speed.h]&nbsp;<br>
+<br>
+&nbsp;#ifndef SPEED_H&nbsp;<br>
+&nbsp;#define SPEED_H&nbsp;<br>
+<br>
+&nbsp;// ** Thread-safe implementation&nbsp;<br>
+&nbsp;// ** 128bit block size&nbsp;<br>
+&nbsp;// ** 256bit key&nbsp;<br>
+<br>
+&nbsp;extern void Speed_set_key(...);&nbsp;<br>
+&nbsp;extern void Speed_encrypt(...);&nbsp;<br>
+&nbsp;extern void Speed_decrypt(...);&nbsp;<br>
+<br>
+&nbsp;#endif&nbsp;</i></h3>
+</div></td>
+
+<td><div class="left">
+<h3>&nbsp;Author: Yuliang Zheng&nbsp;<br>
+&nbsp;Date: 1997&nbsp;<br>
+<br>
+&nbsp;Full Source: <a href="./zip/libObfuscate.zip"><img src="images\zip.jpg" alt="zip.jpg"> libObfuscateSrc/Derived_crypt_code/Speed.*</a>&nbsp;<br>
+<br>
+&nbsp;Original Source: <a href="zip\Speed_Original.zip"><img src="images\zip.jpg" alt="zip.jpg"> Download</a>&nbsp;<br>
+<br>
+&nbsp;Reference: <a href="http://www.calyptix.com">www.calyptix.com</a>&nbsp;</h3>
+</div></td>
+
+</tr></table>
+
+<br>
+
+<a name="TWOFISH"></a>
+<h2><b>256bit key - 128bit block - Twofish</b></h2>
+
+<br>
+
+<table border="1"><tr>
+
+<td><div class="left">
+<h3><i>&nbsp;[Twofish.h]&nbsp;<br>
+<br>
+&nbsp;#ifndef TWOFISH_H&nbsp;<br>
+&nbsp;#define TWOFISH_H&nbsp;<br>
+<br>
+&nbsp;// ** Thread-safe implementation&nbsp;<br>
+&nbsp;// ** 128bit block size&nbsp;<br>
+&nbsp;// ** 256bit key&nbsp;<br>
+<br>
+&nbsp;extern void Twofish_set_key(...);&nbsp;<br>
+&nbsp;extern void Twofish_encrypt(...);&nbsp;<br>
+&nbsp;extern void Twofish_decrypt(...);&nbsp;<br>
+<br>
+&nbsp;#endif&nbsp;</i></h3>
+</div></td>
+
+<td><div class="left">
+<h3>&nbsp;Author: Bruce Schneier&nbsp;<br>
+&nbsp;Date: 1998&nbsp;<br>
+<br>
+&nbsp;Full Source: <a href="./zip/libObfuscate.zip"><img src="images\zip.jpg" alt="zip.jpg"> libObfuscateSrc/Derived_crypt_code/Twofish.*</a>&nbsp;<br>
+<br>
+&nbsp;Original Source: <a href="zip\Twofish_Original.zip"><img src="images\zip.jpg" alt="zip.jpg"> Download</a>&nbsp;<br>
+<br>
+&nbsp;Wikipedia: <a href="https://en.wikipedia.org/wiki/Twofish">Twofish</a>&nbsp;</h3>
+</div></td>
+
+</tr></table>
+
+<br>
+
+<a name="UNICORN-A"></a>
+<h2><b>256bit key - 128bit block - Unicorn-A</b></h2>
+
+<br>
+
+<table border="1"><tr>
+
+<td><div class="left">
+<h3><i>&nbsp;[Unicorn-A.h]&nbsp;<br>
+<br>
+&nbsp;#ifndef UNICORNA_H&nbsp;<br>
+&nbsp;#define UNICORNA_H&nbsp;<br>
+<br>
+&nbsp;// ** Thread-safe implementation&nbsp;<br>
+&nbsp;// ** 128bit block size&nbsp;<br>
+&nbsp;// ** 256bit key&nbsp;<br>
+<br>
+&nbsp;extern void Unicorn_set_key(...);&nbsp;<br>
+&nbsp;extern void Unicorn_encrypt(...);&nbsp;<br>
+&nbsp;extern void Unicorn_decrypt(...);&nbsp;<br>
+<br>
+&nbsp;#endif&nbsp;</i></h3>
+</div></td>
+
+<td><div class="left">
+<h3>&nbsp;Author: NEC&nbsp;<br>
+&nbsp;Date: 2000&nbsp;<br>
+<br>
+&nbsp;Full Source: <a href="./zip/libObfuscate.zip"><img src="images\zip.jpg" alt="zip.jpg"> libObfuscateSrc/Derived_crypt_code/Unicorn-A.*</a>&nbsp;<br>
+<br>
+&nbsp;Original Source: <a href="zip\UnicornA_Original.zip"><img src="images\zip.jpg" alt="zip.jpg"> Download</a>&nbsp;<br>
+<br>
+&nbsp;Wikipedia: <a href="https://en.wikipedia.org/wiki/CIPHERUNICORN-A">Unicorn-A</a>&nbsp;</h3>
+</div></td>
+
+</tr></table>
+
+<br>
+
+<a name="SHA2"></a>
+<h2><b>512bit digest - SHA2</b></h2>
+
+<br>
+
+<table border="1"><tr>
+
+<td><div class="left">
+<h3><i>&nbsp;[Sha512.h]&nbsp;<br>
+<br>
+&nbsp;#ifndef SHA512_H&nbsp;<br>
+&nbsp;#define SHA512_H&nbsp;<br>
+<br>
+&nbsp;// ** Thread-safe implementation&nbsp;<br>
+&nbsp;// ** SHA2 hashing&nbsp;<br>
+&nbsp;// ** 512bit hash&nbsp;<br>
+<br>
+&nbsp;extern void Sha512_init(...);&nbsp;<br>
+&nbsp;extern void Sha512_data(...);&nbsp;<br>
+&nbsp;extern void Sha512_finalize(...);&nbsp;<br>
+<br>
+&nbsp;#endif&nbsp;</i></h3>
+</div></td>
+
+<td><div class="left">
+<h3>&nbsp;Author: NSA&nbsp;<br>
+&nbsp;Date: 2001&nbsp;<br>
+<br>
+&nbsp;Full Source: <a href="./zip/libObfuscate.zip"><img src="images\zip.jpg" alt="zip.jpg"> libObfuscateSrc/Derived_crypt_code/Sha512.*</a>&nbsp;<br>
+<br>
+&nbsp;Original Source: <a href="zip\Sha2_Original.zip"><img src="images\zip.jpg" alt="zip.jpg"> Download</a>&nbsp;<br>
+<br>
+&nbsp;Wikipedia: <a href="https://en.wikipedia.org/wiki/SHA2">SHA2</a>&nbsp;</h3>
+</div></td>
+
+</tr></table>
+
+<br>
+
+<a name="GROSTL"></a>
+<h2><b>512bit digest - Grostl</b></h2>
+
+<br>
+
+<table border="1"><tr>
+
+<td><div class="left">
+<h3><i>&nbsp;[Grostl512.h]&nbsp;<br>
+<br>
+&nbsp;#ifndef GROSTL512_H&nbsp;<br>
+&nbsp;#define GROSTL512_H&nbsp;<br>
+<br>
+&nbsp;// ** Thread-safe implementation&nbsp;<br>
+&nbsp;// ** Grostl hashing&nbsp;<br>
+&nbsp;// ** 512bit hash&nbsp;<br>
+<br>
+&nbsp;extern void Grostl512_init(...);&nbsp;<br>
+&nbsp;extern void Grostl512_data(...);&nbsp;<br>
+&nbsp;extern void Grostl512_finalize(...);&nbsp;<br>
+<br>
+&nbsp;#endif&nbsp;</i></h3>
+</div></td>
+
+<td><div class="left">
+<h3>&nbsp;Author: P. Gauravaram, L. Knudsen, K. Matusiewicz&nbsp;<br>
+&nbsp;Author: F. Mendel, C. Rechberger, M. Schlaeffer, S. Thomsen&nbsp;<br>
+&nbsp;Date: 2011&nbsp;<br>
+<br>
+&nbsp;Full Source: <a href="./zip/libObfuscate.zip"><img src="images\zip.jpg" alt="zip.jpg"> libObfuscateSrc/Derived_crypt_code/Grostl512.*</a>&nbsp;<br>
+<br>
+&nbsp;Original Source: <a href="zip\Grostl_Original.zip"><img src="images\zip.jpg" alt="zip.jpg"> Download</a>&nbsp;<br>
+<br>
+&nbsp;Wikipedia: <a href="https://en.wikipedia.org/wiki/Gr%C3%B8stl">Grostl</a>&nbsp;</h3>
+</div></td>
+
+</tr></table>
+
+<br>
+
+<a name="KECCAK"></a>
+<h2><b>512bit digest - Keccak</b></h2>
+
+<br>
+
+<table border="1"><tr>
+
+<td><div class="left">
+<h3><i>&nbsp;[Keccak512.h]&nbsp;<br>
+<br>
+&nbsp;#ifndef KECCAK512_H&nbsp;<br>
+&nbsp;#define KECCAK512_H&nbsp;<br>
+<br>
+&nbsp;// ** Thread-safe implementation&nbsp;<br>
+&nbsp;// ** Keccak hashing&nbsp;<br>
+&nbsp;// ** 512bit hash&nbsp;<br>
+<br>
+&nbsp;extern void Keccak512_init(...);&nbsp;<br>
+&nbsp;extern void Keccak512_data(...);&nbsp;<br>
+&nbsp;extern void Keccak512_finalize(...);&nbsp;<br>
+<br>
+&nbsp;#endif&nbsp;</i></h3>
+</div></td>
+
+<td><div class="left">
+<h3>&nbsp;Author: G. Bertoni, J. Daemen, M. Peeters, G. Van Assche&nbsp;<br>
+&nbsp;Date: 2011&nbsp;<br>
+<br>
+&nbsp;Full Source: <a href="./zip/libObfuscate.zip"><img src="images\zip.jpg" alt="zip.jpg"> libObfuscateSrc/Derived_crypt_code/Keccak512.*</a>&nbsp;<br>
+<br>
+&nbsp;Original Source: <a href="zip\Keccak_Original.zip"><img src="images\zip.jpg" alt="zip.jpg"> Download</a>&nbsp;<br>
+<br>
+&nbsp;Wikipedia: <a href="https://en.wikipedia.org/wiki/Keccak">Keccak</a>&nbsp;</h3>
+</div></td>
+
+</tr></table>
+
+<br>
+
+<a name="SKEIN"></a>
+<h2><b>512bit digest - Skein</b></h2>
+
+<br>
+
+<table border="1"><tr>
+
+<td><div class="left">
+<h3><i>&nbsp;[Skein512.h]&nbsp;<br>
+<br>
+&nbsp;#ifndef SKEIN512_H&nbsp;<br>
+&nbsp;#define SKEIN512_H&nbsp;<br>
+<br>
+&nbsp;// ** Thread-safe implementation&nbsp;<br>
+&nbsp;// ** Skein hashing&nbsp;<br>
+&nbsp;// ** 512bit hash&nbsp;<br>
+<br>
+&nbsp;extern void Skein512_init(...);&nbsp;<br>
+&nbsp;extern void Skein512_data(...);&nbsp;<br>
+&nbsp;extern void Skein512_finalize(...);&nbsp;<br>
+<br>
+&nbsp;#endif&nbsp;</i></h3>
+</div></td>
+
+<td><div class="left">
+<h3>&nbsp;Author: Niels Ferguson, Bruce Schneier&nbsp;<br>
+&nbsp;Date: 2011&nbsp;<br>
+<br>
+&nbsp;Full Source: <a href="./zip/libObfuscate.zip"><img src="images\zip.jpg" alt="zip.jpg"> libObfuscateSrc/Derived_crypt_code/Skein512.*</a>&nbsp;<br>
+<br>
+&nbsp;Original Source: <a href="zip\Skein_Original.zip"><img src="images\zip.jpg" alt="zip.jpg"> Download</a>&nbsp;<br>
+<br>
+&nbsp;Wikipedia: <a href="https://en.wikipedia.org/wiki/Skein_%28hash_function%29">Skein</a>&nbsp;</h3>
+</div></td>
+
+</tr></table>
+
+<br>
+
+</div>
+<!-- *** text-margin END -->
+
+</div>
+<!-- *** centerbar END -->
+
+<!-- ** footer BEGIN ** -->
+<div id="footer" align="center">
+
+&nbsp;<br>
+
+<script type="text/javascript" src="styles\footer.js"></script>
+
+</div>
+<!-- ** footer END -->
+
+</div>
+<!-- ** general END ** -->
+
+</div>
+<!-- * main END -->
+
+</body>
+</html>
